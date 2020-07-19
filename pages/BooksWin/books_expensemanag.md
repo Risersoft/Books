@@ -1,16 +1,46 @@
 ---
-title: Tour Expense Report
-keywords: Tour Expense Report
+title: Expense Management
+keywords: Expense Management
 sidebar: bookswin_sidebar
-permalink: books-nirvana-win/tour-expense-report.html
+permalink: books-nirvana-win/expense-management.html
 folder: BooksWin
 hide_sidebar: false
 comments: false
 ---
 
-# Tour Expense Report
+# Expense Management
 
-## Create
+## Tour Advance Requisition
+
+
+
+### Create
+
+**STEP-1**: Click on **New-> Voucher-> Tour Advance Requisition**. **Tour Advance Requisition** form will appear.
+
+![](/images/tour-adv-req-create.jpg)
+
+**STEP-2**: Fill the details and click on **Save**.
+
+![](/images/tour-adv-req-create-save.jpg)
+
+### List
+
+Click on **Vouchers-> Tour Advance Requisition**. **Tour Advance Requisition** list will appear.
+
+![](/images/tour-adv-req-list.jpg)
+
+### Edit
+
+**STEP-1**: Select the tour advance requisition from the list and right click on it. Select **Edit Tour Advance Requisition** option.
+
+![](/images/tour-adv-req-edit.jpg)
+
+**STEP-2**: Edit the details and click on **Save**.
+
+## Tour Expense Report
+
+### Create
 
 **STEP-1**: Click on **New-> Voucher-> Tour Expense Report**. **Tour Expense Report** form will appear.
 
@@ -58,16 +88,46 @@ comments: false
 
 ![](/images/tour-exp-rep-create-addnew-save.jpg)
 
-## List
+### List
 
 Click on **Vouchers-> Tour Expense Report**.**Tour Expense Report** list will appear.
 
 ![](/images/tour-exp-rep-list.jpg)
 
-## Edit
+### Edit
 
 **STEP-1**: Select the tour expense report from the list and right click on it. Select **Edit Tour Expense Report option**.
 
 ![](/images/tour-exp-rep-edit.jpg)
 
 **STEP-2**: Edit the details and click on **Save**.
+
+
+
+## Payment Travel
+
+### Create
+
+**STEP-1**: Click on **New-> Payment -> Payment Travel**. **Payment Travel** form will appear.
+
+![](/images/pay-travel-create.jpg)
+
+**STEP-2**: Fill the details and click on **Save**.
+
+![](/images/pay-travel-create-save.jpg)
+
+### List
+
+Click on **Vouchers-> Payments-> Payment Travel**. **Payment travel** list will appear.
+
+![](/images/pay-travel-list.jpg)
+
+### Edit
+
+**STEP-1**: Select the payment travel from the list and right click on it. Select **Edit Payment Travel** option.
+
+![](/images/pay-travel-edit.jpg)
+
+**STEP-2**: Edit the details and click on **Save**.
+
+

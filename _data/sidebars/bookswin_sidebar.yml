@@ -43,7 +43,7 @@ entries:
       output: web, pdf
       
     - title: Item Unit
-      url: books-nirvana-win/item-unit.html
+      url: /books-nirvana-win/item-unit.html
       output: web, pdf
        
     - title: Item Schedule
@@ -104,34 +104,9 @@ entries:
       output: web, pdf
       
     - title: Material Voucher
-      url: /books-nirvana-win/material-voucher.html
+      url: /books-nirvana-win/material-voucher-purchase.html
       output: web, pdf
-      subfolders:
-      - title: Material Voucher Against PO(GR)
-        url: /books-nirvana-win/material-voucher-against-po(gr).html
-        output: web
-        subfolderitems:
-        -
-      - title: Material Voucher Against LPO(GR)
-        url: /books-nirvana-win/material-voucher-against-lpo(gr).html
-        output: web
-        subfolderitems:
-        -
-      - title: Material Voucher Against JWO(GR)
-        url: /books-nirvana-win/material-voucher-against-jwo(gr).html
-        output: web
-        subfolderitems:
-        -
-      - title: Material Voucher Against Other(GR)
-        url: /books-nirvana-win/material-voucher-against-other(GR).html
-        output: web
-        subfolderitems:
-        -
-      - title: Material Voucher Against OD Note(GI)
-        url: /books-nirvana-win/material-voucher-against-od-note(GI).html
-        output: web
-        subfolderitems:
-        -
+      
       
     - title: Movement Code List
       url: /books-nirvana-win/movement-code-list.html
@@ -167,39 +142,9 @@ entries:
       output: web, pdf
       
     - title: Material Voucher
-      url: /ed-web/learnermytests.html
+      url: /books-nirvana-win/material-voucher-operations.html
       output: web, pdf
-      subfolders:
-      - title: Material Voucher Against OD Note(TP)
-        url: /books-nirvana-win/material-voucher-against-od-note(tp).html
-        output: web
-        subfolderitems:
-        -
-      - title: Material Voucher Against Material Indent(TP)
-        url: /books-nirvana-win/material-voucher-against-material-indent(tp).html
-        output: web
-        subfolderitems:
-        -
-      - title: Material Voucher Against Material Voucher(TP)
-        url: /books-nirvana-win/material-voucher-against-material-voucher(tp).html
-        output: web
-        subfolderitems:
-        -
-      - title: Material Voucher Against Other(TP)
-        url: /books-nirvana-win/material-voucher-against-other(tp).html
-        output: web
-        subfolderitems:
-        -
-      - title: Material Voucher Against Material Indent(GI)
-        url: /books-nirvana-win/material-voucher-against-material-indent(gi).html
-        output: web
-        subfolderitems:
-        -
-      - title: Material Voucher Against MO(GR)
-        url: /books-nirvana-win/material-voucher-against-mo(gr).html
-        output: web
-        subfolderitems:
-        -
+      
         
   - title: Sale
     output: web, pdf
@@ -210,20 +155,9 @@ entries:
       output: web
     
     - title: Material Voucher
+      url: /books-nirvana-win/material-voucher-sale.html
       output: web, pdf
-      subfolders:
       
-      - title: Material Voucher Against OD Note(GI)
-        url: /books-nirvana-win/material-voucher-against-od-note(gi).html
-        output: web
-        subfolderitems:
-        -
-        
-      - title: Material Voucher Against Other(GI)
-        url: /books-nirvana-win/material-voucher-against-other(gi).html
-        output: web
-        subfolderitems:
-        -
         
     - title: Sale Invoices
       url: /books-nirvana-win/sale-invoices.html
@@ -236,6 +170,24 @@ entries:
     - title: Payment Customer
       url: /books-nirvana-win/payment-customer.html
       output: web
+      
+  - title: Accounting
+    
+    output: web, pdf
+
+    folderitems:
+    
+    
+      
+    - title: Expense Management
+      url: /books-nirvana-win/expense-management.html
+      
+      output: web, pdf
+      
+      
+    - title: Accounting Voucher
+      url: /books-nirvana-win/accounting-voucher.html
+      output: web, pdf
         
   - title: Accounts Menu
     url: /books-nirvana-win/accounts-menu.html
@@ -261,93 +213,7 @@ entries:
     - title: Campus Inventory
       url: /books-nirvana-win/campus-inventory.html
       output: web 
-      subfolders:
-      - title: Finished Goods(FG)
-        url: /books-nirvana-win/finished-goods(fg).html
-        output: web
-        subfolderitems:
-        -
-      - title: Work-In-Progress(WIP)
-        url: /books-nirvana-win/work-in-progress(wip).html
-        output: web
-        subfolderitems:
-        -
-      - title: Consumable Goods(CG)
-        url: /books-nirvana-win/consumable-goods(cg).html
-        output: web
-        subfolderitems:
-        -
-      - title: Consumable Tools(CT)
-        url: /books-nirvana-win/consumable-tools(ct).html
-        output: web
-        subfolderitems:
-        -
-      - title: Raw Material(RM)
-        url: /books-nirvana-win/raw-material(rm).html
-        output: web
-        subfolderitems:
-        -
-      - title: Stock-In-Trade(ST)
-        url: /books-nirvana-win/stock-in-trade(st).html
-        output: web
-        subfolderitems:
-        -
-      - title: Total Stock
-        url: /books-nirvana-win/total-stock.html
-        output: web
-        subfolderitems:
-        -
-      - title: Finished Goods Value(FG)
-        url: /books-nirvana-win/finished-goods-value(fg).html
-        output: web
-        subfolderitems:
-        -
-      - title: Work-In-Progress Value (WIP)
-        url: /books-nirvana-win/work-in-progress-value(wip).html
-        output: web
-        subfolderitems:
-        -
       
-      - title: Consumable Goods Value (CG)
-        url: /books-nirvana-win/consumable-goods-value(cg).html
-        output: web
-        subfolderitems:
-        -
-      - title: Consumable Tools Value (CT)
-        url: /books-nirvana-win/consumable-tools-value(ct).html
-        output: web
-        subfolderitems:
-        -
-      - title: Raw Material Value (RM)
-        url: /books-nirvana-win/raw-material-value(rm).html
-        output: web
-        subfolderitems:
-        -
-      - title: Stock-In-Trade Value (ST)
-        url: /books-nirvana-win/stock-in-trade-value(st).html
-        output: web
-        subfolderitems:
-        -
-      - title: Stock Statement
-        url: /books-nirvana-win/stock-statement.html
-        output: web
-        subfolderitems:
-        -
-      - title: Total Stock Value
-        url: /books-nirvana-win/total-stock-value.html
-        output: web
-        subfolderitems:
-        -
-      - title: Reservation Summary
-        url: /books-nirvana-win/reservation-summary.html
-        output: web
-        subfolderitems:
-        -
-      - title: Reservation Details
-        url: /books-nirvana-win/reservation-details.html
-        output: web
-        subfolderitems:
-        -
 
     - title: Departmental Inventory
       url: /books-nirvana-win/departmental-inventory.html
@@ -361,44 +227,7 @@ entries:
     - title: Schedule Manager
       url: /books-nirvana-win/schedule-manager.html
       output: web         
-
-     
-
-    
-        
-  - title: Accounting
-    
-    output: web, pdf
-
-    folderitems:
-    
-    
-      
-    - title: Expense Management
-      
-      output: web, pdf
-      subfolders:
-      - title: Tour Advance Requisition
-        url: /books-nirvana-win/tour-advance-requisition.html
-        output: web
-        subfolderitems:
-        -
-      - title: Tour Expense Report
-        url: /books-nirvana-win/tour-expense-report.html
-        output: web
-        subfolderitems:
-        -
-      - title: Payment Travel
-        url: /books-nirvana-win/payment-travel.html
-        output: web
-        subfolderitems:
-        -
-      
-    - title: Accounting Voucher
-      url: /books-nirvana-win/accounting-voucher.html
-      output: web, pdf
-      
-    
+ 
   - title: Process Flows
     output: web, pdf   
     folderitems :
@@ -413,22 +242,7 @@ entries:
     - title: Transfer to Subcontracting Vendor (421) and Receive against Transfer (425)
       url: /books-nirvana-win/transfer-to-subcontracting-vendor(421)-and-receive-against-transfer(425).html
       output: web
-      subfolders:
-      - title: Movement Code – 421 without Challan
-        url: /books-nirvana-win/movement-code–421-without-challan.html
-        output: web
-        subfolderitems:
-        -
-      - title: Movement Code – 421 with Challan
-        url: /books-nirvana-win/movement-code–421-with-challan.html
-        output: web
-        subfolderitems:
-        -
-      - title: Movement Code – 425
-        url: /books-nirvana-win/movement-code–425.html
-        output: web
-        subfolderitems:
-        -        
+      
              
 
     - title: Testing Against Sales Order
@@ -477,5 +291,5 @@ entries:
 
   - title: Terminology 
     url: /books-nirvana-win/terminology.html   
-    output: web, pdf      
+    output: single     
     
