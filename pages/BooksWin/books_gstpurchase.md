@@ -8,14 +8,21 @@ hide_sidebar: false
 comments: false
 ---
 
-## Purchase
+# Purchase
 
 To view details about purchase, click on **Purchase->---**
 
 ![](/images/purchase.jpg)
 
-> More:
 
-[Counter Party invoice]()
+## Counter Party invoice
 
-[Purchase Invoice Matching]()
+To view purchase counter party invoices, click on **Counter Party Invoices**.
+
+![](/images/purchase-counter-party-inv.jpg)
+
+## Purchase Invoice Matching
+
+To view purchase invoice matching with counter party invoice, click on **Purchase Invoices Matching**.
+
+![](/images/purchase-pur-inv-matching.jpg)

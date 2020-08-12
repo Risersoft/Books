@@ -8,12 +8,16 @@ hide_sidebar: false
 comments: false
 ---
 
-## GSTN
+# GSTN
 
 To view details about GSTN, click on **GSTN Menu -> ……**.
 
-> More:
+## Return Status
 
-[Return Status]()
+![](/images/gstn-return-status.jpg)
 
-[Transaction History]()
+
+## Transaction History
+
+![](/images/gstn-trans-history.jpg)
+

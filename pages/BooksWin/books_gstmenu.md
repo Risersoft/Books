@@ -8,7 +8,7 @@ hide_sidebar: false
 comments: false
 ---
 
-## GST Menu
+# GST Menu
 
 To view invoices according gst, click on **GST** menu.
 
@@ -16,16 +16,4 @@ To view invoices according gst, click on **GST** menu.
 
 For menu options, click on **GST-> Menu** options---
 
-> More:
 
-[GSTR1]()
-
-[GSTR2]()
-
-[GSTR3B]()
-
-[GSTN]()
-
-[Purchase]()
-
-[Sale]()

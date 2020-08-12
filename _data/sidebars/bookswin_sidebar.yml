@@ -176,8 +176,7 @@ entries:
     output: web, pdf
 
     folderitems:
-    
-    
+  
       
     - title: Expense Management
       url: /books-nirvana-win/expense-management.html
@@ -188,6 +187,37 @@ entries:
     - title: Accounting Voucher
       url: /books-nirvana-win/accounting-voucher.html
       output: web, pdf
+      
+  - title: GST Menu
+    url: /books-nirvana-win/gst-menu.html
+    output: web, pdf
+
+    folderitems:
+    - title: GSTR1
+      url: /books-nirvana-win/gstr1.html
+      output: web
+
+    - title: GSTR2
+      url: /books-nirvana-win/gstr2.html
+      output: web  
+
+    - title: GSTR3B
+      url: /books-nirvana-win/gstr3b.html
+      output: web 
+
+    - title: GSTN
+      url: /books-nirvana-win/gstn.html
+      output: web 
+
+    - title: Purchase
+      url: /books-nirvana-win/purchase.html
+      output: web 
+      
+
+    - title: Sale
+      url: /books-nirvana-win/sale.html
+      output: web
+ 
         
   - title: Accounts Menu
     url: /books-nirvana-win/accounts-menu.html

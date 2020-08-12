@@ -8,14 +8,22 @@ hide_sidebar: false
 comments: false
 ---
 
-## Sale
+# Sale
 
 To view details about sale, click on **Sale->---**
 
 ![](/images/sale.jpg)
 
-> More:
+## Counter Party Invoice
 
-[Counter Party Invoice]()
+To view sale counter party invoices, click on **Counter Party Invoices**.
 
-[Sale Invoice Matching]()
+![](/images/sale-counter-party-inv.jpg)
+
+## Sale Invoice Matching
+
+To view sale invoice matching with counter party invoice, click on **Sale Invoices Matching**.
+
+![](/images/sale-invoice-match.jpg)
+
+
