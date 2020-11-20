@@ -1,0 +1,168 @@
+﻿------Department Stock Extra Rows in ItemStockQtyDep But in Delta----------------
+Select * from ItemStockQtyDep as Dep where (
+(Select count(*) from ItemStockDeltaQty where DeltaCD = 'D' 
+and ItemID = Dep.ItemID 
+and MatDepID = Dep.MatDepID 
+and isNull(PIDUnitID,0) = isnull(Dep.PIDUnitID,0)
+and isnull(VarNum,'') = isnull(Dep.VarNum,'')
+and StockStage = Dep.StockStage 
+and TaxType = Dep.TaxType 
+and SpStock = Dep.SpStock 
+and isnull(QtyTot,0) > 0)=0)
+and isnull(QtyTot,0) > 0 Order by ItemID, PostPeriodID
+
+
+------Campus Stock Extra Rows in ItemStockQtyCampus But in Delta----------------
+Select * from ItemStockQtyCampus    as Dep where (
+(Select count(*) from ItemStockDeltaQty where DeltaCD = 'C' 
+and ItemID = Dep.ItemID 
+and CampusID = Dep.CampusID 
+and isNull(PIDUnitID,0) = isnull(Dep.PIDUnitID,0)
+and isnull(VarNum,'') = isnull(Dep.VarNum,'')
+and StockStage = Dep.StockStage 
+and TaxType = Dep.TaxType 
+and SpStock = Dep.SpStock 
+and isnull(QtyTot,0) > 0)=0)
+and isnull(QtyTot,0) > 0
+
+
+------Value of Stock Extra Rows in ItemStockValue But in Delta----------------
+Select *  from ItemStockValue as Dep where (
+(Select count(*) from ItemStockDeltaValue  where 
+ItemID = Dep.ItemID 
+and CampusID = Dep.CampusID 
+and isNull(PIDUnitID,0) = isnull(Dep.PIDUnitID,0)
+and isnull(VarNum,'') = isnull(Dep.VarNum,'')
+and StockStage = Dep.StockStage 
+and TaxType = Dep.TaxType 
+and isnull(Qty,0) > 0)=0)
+and isnull(Qty,0) > 0 Order by ItemID, PostPeriodID
+
+
+--------For Opening-----Check ItemStockValueBal Qty with MatVouchItem Qty-----------------------
+Select MatVouchItem.MatVouchItemID,MatVouchID, MatVouchItem.ItemID, MatVouchItem.QtyEntry, ItemStockValueBal.Qty 
+from MatVouchItem Left join ItemStockValueBal on MatVouchItem.MatVouchItemID = ItemStockValueBal.MatVouchItemID 
+where MatVouchItem.MatVouchID in (Select MatVouchID from MatVouch where PostPeriodID = 1225) and MvtCode = 501 and ItemStockValueID is NULL
+and MatVouchItem.QtyEntry <> ItemStockValueBal.Qty 
+
+
+---------Specific Case------------------------------------------------------------------------------------
+Select Distinct Itemid, CampusID, PIDUnitID,VarNum, StockStage, TaxType from ItemStockDeltaValue  where MatVouchItemID in (
+Select MatVouchItemID from MatVouchItem where MatVouchID in (Select MatVouchID from MatVouch where PostPeriodID > 1239))
+and (convert(varchar,itemid) + '-' + 
+convert(varchar,campusid) + '-' + 
+convert(varchar,isnull(pidunitid,0)) + '-' + 
+convert(varchar,isnull(varnum,0)) + '-' + 
+convert(varchar,StockStage) + '-' + 
+convert(varchar,TaxType)) 
+in (Select (convert(varchar,itemid) + '-' + 
+convert(varchar,campusid) + '-' + 
+convert(varchar,isnull(pidunitid,0)) + '-' + 
+convert(varchar,isnull(varnum,0)) + '-' + 
+convert(varchar,StockStage) + '-' + 
+convert(varchar,TaxType)) from ItemStockValue where PostPeriodID = 1249 and AmountTot > 0)
+
+---------General Query-----------------------------------------------------------------------------------
+
+Select * from ItemStockDeltaQty where MatVouchItemID not in (Select MatVouchItemID from MatVouchItem)
+Select * from ItemStockDeltaValue where MatVouchItemID not in (Select MatVouchItemID from MatVouchItem)
+Select * from ItemStockDeltaRes where MatVouchItemID not in (Select MatVouchItemID from MatVouchItem)
+ 
+Select * from ItemStockQtyCampus where (Qty < 0) or (Qty2 < 0)
+Select * from ItemStockQtyDep where (QtyTot < 0) or (QtyTot2 < 0)
+Select * from ItemStockValue where (Qty < 0) or (Qty2 < 0) or (AmountTot < 0) or (AmountWV < 0)
+Select * from ItemStockRes where QtyTot < 0  or QtyTot2 < 0
+Select * from ItemStockValueBal where (Qty < 0) or (Qty2 < 0) or (AmountTot < 0) or (AmountWV < 0)
+Select * from ItemStockValueBal where MatVouchItemID not in (Select MatVouchItemID from MatVouchItem)
+
+
+
+
+
+----------------------Duplicate AccVouch No. ----------------------------------------------------
+
+Select Count(AccVouchID) as C,CompanyID,VoucherNum,VouchDate from AccVouch  
+Group By CompanyID,VoucherNum, VouchDate 
+having Count(AccVouchID)>1
+order by VoucherNum
+
+Select AccVouchID, AccVouchType, VoucherNum, VouchDate, 
+(Select top 1 VoucherNum from AccVouch where VouchDate = AV.VouchDate order by DocSysNum desc) as LastVoucher
+from AccVouch as AV where VoucherNum + CONVERT(Varchar,VouchDate) in (
+Select VoucherNum + CONVERT(Varchar,VouchDate) from AccVouch  
+Group By CompanyID,VoucherNum, VouchDate 
+having Count(AccVouchID)>1)
+order by AV.VouchDate, AV.VoucherNum
+
+
+----------------------Stock Chart Vendor Purchase and Account Ledger Difference ---------------------
+
+Select MatVouchItemID, InvoiceID, AmountTot, AmountWV  from invListMatVouchItem() 
+where itemid in (6562, 11248, 11895, 12127, 15021,17295, 18373) and finyearID = 21
+and ValuationClass = 'CRCA' and PriceSlabID is not Null Order by InvoiceID 
+
+
+Select  InvoiceID, DebitAmount - CreditAmount   from accListVouchItem() 
+where GLAccountID = 11345 and FinYearID = 21 and InvoiceID is Not Null Order by InvoiceID 
+
+
+---------------------GR Against MO with BOM Items -------------------------------------------
+
+Select A.MatVouchItemID, B.MatVouchItemID, B.PMatVouchItemID, A.VouchNum, A.VouchDate, 
+A.ItemCode, A.ItemName, A.QtyEntry, A.MvtCode,
+B.ItemCode, B.ItemName, B.MvtCode, B.QtyEntry 
+from invListMatVouchItem() as A 
+Left Join invListMatVouchItem() as B on A.MatVouchItemID = B.PMatVouchItemID 
+where A.ItemSBHeadID = 1130
+and A.PMatVouchItemID is Null and A.finyearID = 21
+and A.VouchTypeCode = 'GR' and A.MvtCode <> 101
+Order by A.VouchDate
+
+
+
+-----------------Duplicate Invoice No.------------------------------------------------------
+
+Select Count (*) as C, InvoiceNum, FinYearID, PartyName from AccListInvoice() 
+Where DocType = 'IP' and FinYearID <> 19
+Group by  InvoiceNum, PartyName,FinYearID
+Order By C Desc, FinYearID
+
+-----------------Reverse Consumption Chart (What GR if GI this Item)------------------------
+
+SELECT  MatVouchItem.MatVouchItemID, MatVouch.MatVouchID,
+    MatVouch.VouchNum, MatVouch.VouchDate,
+    GRSubCat.InitialCode as GRInitialCode, GrSubcat.SubCatName as GRSubCatName,
+    ItemSubCats.initialCode,ItemSubCats.SubCatName,
+    GRSubCat.ValuationClass as GRVC, ItemSubCats.ValuationClass,
+	--MatVouchItem.MvtCode as movementCode,
+    GRMI.QtyEntry as GRQty,
+  	--Case when isnull(MatVouchItem.PMatVouchItemID, 0) = 0 then  GRMI.QtyEntry  else 0 End as GRQty,
+    Case when isnull(MatVouchItem.PMatVouchItemID, 0) <> 0 then   MatVouchItem.QtyEntry else 0 End as QtyEntry
+   
+ FROM  MatVouchItem    
+    inner join MatVouch on MatVouch.MatVouchID = MatVouchItem.MatVouchID and MatVouch.TenantID = MatVouchItem.TenantID
+    inner join MatVouchtype on MatVouch.MatVouchtypeID = MatVouchtype.MatVouchtypeID
+    inner join Items on MatVouchItem.ItemID = Items.ItemID and MatVouchItem.TenantID = Items.TenantID
+    inner join ItemSubCats  on Items.SubCatID = ItemSubCats.SubCatID and Items.TenantID = ItemSubCats.TenantID
+    left join ItemUnits on MatVouchItem.ItemUnitIDEntry  = ItemUnits.ItemUnitID and MatVouchItem.TenantID  = ItemUnits.TenantID
+    left join DepsMat on MatVouch.MatDepID = DepsMat.MatDepID and MatVouch.TenantID = DepsMat.TenantID
+    Left join Campus on DepsMat.CampusID = Campus.CampusID and DepsMat.TenantID = Campus.TenantID
+    left join PIDUnit on MatVouchitem.PIDUNitID = PIDUnit.PidUnitID and MatVouchitem.TenantID = PIDUnit.TenantID
+    left join MatMvtCodeSp on MatvouchItem.MVTCode = MatMvtCodeSp.MatMvtCode and MatVouchItem.SpStock = MatMvtCodeSp.SpStockType
+    left join PostPeriod on MatVouch.PostPeriodID = PostPeriod.PostPeriodID and MatVouch.TenantID = PostPeriod.TenantID
+    Left Join MatVouchItem as GRMI on GRMI.MatVouchItemID = isnull(MatVouchItem.PMatVouchItemID, MatVouchItem.MatVouchItemID)
+    left join Items as GRItem on GRMI.ItemID = GRItem.ItemID and GRMI.TenantID = GRItem.TenantID
+    left join ItemSubCats as GRSubCat  on GRItem.SubCatID = GRSubCat.SubCatID and GRItem.TenantID = GRSubCat.TenantID
+    left join MatMvtCode on MatvouchItem.MVTCode =MatMvtCode.MatMvtCode
+	
+	Left Join MatVouchItem as GIMI on GIMI.pMatVouchItemID = MatVouchItem.MatVouchItemID
+	--left join Items as GIItem on GIMI.ItemID = GIItem.ItemID and GIMI.TenantID = GIItem.TenantID
+ --   left join ItemSubCats as GISubCat  on GIItem.SubCatID = GISubCat.SubCatID and GIItem.TenantID = GISubCat.TenantID
+    	
+	where ((Bommvtcode is not null) or (MatVouchItem.PMatVouchItemID is not null))
+          and Campus.Campusid = 1 and FinYearID = 22
+		 --and MatVouch.MatVouchID = 33286
+		 --and GRSubCat.ValuationClass = 'COPPER'
+		 --and (ItemSubCats.ValuationClass = 'COPPER')
+         and ItemSubCats.ItemSBHeadID in (1130)
+		 order by MatVouch.MatVouchID, MatVouchItem.MatVouchItemID 

@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC11BDC5-8644-4C2A-80BB-CEF3C8BB8FE5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>risersoft.app.mxform.books</RootNamespace>
+    <AssemblyName>risersoft.app.mxform.books</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>risersoft.app.mxform.books.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>risersoft.app.mxform.books.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug2|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>risersoft.app.mxform.books.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="'$(Configuration)' == 'Debug2'">
+      <ItemGroup>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared\risersoft.shared.vbproj">
+          <Project>{678f7367-71bb-425c-a388-b45d25822ca3}</Project>
+          <Name>risersoft.shared</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.dotnetfx\risersoft.shared.dotnetfx.vbproj">
+          <Project>{3dc06d9d-b9b9-414c-b83c-2b9eeaaf5ea6}</Project>
+          <Name>risersoft.shared.dotnetfx</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.app.mxent\risersoft.app.mxent.vbproj">
+          <Project>{2693738b-de66-476d-afda-fd39e4579f27}</Project>
+          <Name>risersoft.app.mxent</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.portable\risersoft.shared.portable.csproj">
+          <Project>{1742c540-4c7d-4397-8a46-f6a6ade33c5e}</Project>
+          <Name>risersoft.shared.portable</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.dal\risersoft.shared.dal.vbproj">
+          <Project>{68B77483-9004-404B-B649-0E8BB780158E}</Project>
+          <Name>risersoft.shared.dal</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.cloud\risersoft.shared.cloud.vbproj">
+          <Project>{f5b5afa9-af4a-4b86-8d8d-502976813633}</Project>
+          <Name>risersoft.shared.cloud</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Web\risersoft.shared.web\risersoft.shared.web.vbproj">
+          <Project>{cdfe0943-b942-4857-a99d-98230791fd8d}</Project>
+          <Name>risersoft.shared.web</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.console\risersoft.shared.agent.csproj">
+          <Project>{39e6633f-2d15-4a82-a033-ac89108616e4}</Project>
+          <Name>risersoft.shared.agent</Name>
+        </ProjectReference>
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="risersoft.app.mxent">
+          <HintPath>..\..\..\common\depends\risersoft.app.mxent.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared">
+          <HintPath>..\..\..\common\depends\risersoft.shared.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.dotnetfx">
+          <HintPath>..\..\..\common\depends\risersoft.shared.dotnetfx.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.portable">
+          <HintPath>..\..\..\common\depends\risersoft.shared.portable.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.dal">
+          <HintPath>..\..\..\common\depends\risersoft.shared.dal.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.cloud">
+          <HintPath>..\..\..\common\depends\risersoft.shared.cloud.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.web">
+          <HintPath>..\..\..\common\depends\risersoft.shared.web.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.agent">
+          <HintPath>..\..\..\common\depends\risersoft.shared.agent.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Reference Include="Infragistics.Shared,Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win,Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="risersoft.app.mxform.gst" />
+    <Import Include="risersoft.shared.portable" />
+    <Import Include="risersoft.shared.portable.Models.Nav" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\frmAccSchedModel.vb" />
+    <Compile Include="Accounts\frmAccVouchModel.vb" />
+    <Compile Include="Accounts\frmBankAccountModel.vb" />
+    <Compile Include="Accounts\frmCostCenterListModel.vb" />
+    <Compile Include="Accounts\frmCostCenterModel.vb" />
+    <Compile Include="Accounts\frmCostElementModel.vb" />
+    <Compile Include="Accounts\frmCostElemGroupListModel.vb" />
+    <Compile Include="Accounts\frmCostElemGroupModel.vb" />
+    <Compile Include="Accounts\frmCostVouchModel.vb" />
+    <Compile Include="Accounts\frmFinStatementModel.vb" />
+    <Compile Include="Accounts\frmFixedAssetItemModel.vb" />
+    <Compile Include="Accounts\frmFixedAssetModel.vb" />
+    <Compile Include="Accounts\frmGLAccGroupListModel.vb" />
+    <Compile Include="Accounts\frmGLAccGroupModel.vb" />
+    <Compile Include="Accounts\frmGLAccountModel.vb" />
+    <Compile Include="Accounts\frmImprestAdjustModel.vb" />
+    <Compile Include="Accounts\frmInvoiceHRCModel.vb" />
+    <Compile Include="Accounts\frmInvoiceOpenModel.vb" />
+    <Compile Include="Accounts\frmInvoicePurchAllocModel.vb" />
+    <Compile Include="Accounts\frmInvoicePurchModel.vb" />
+    <Compile Include="Accounts\frmInvoiceRecastModel.vb" />
+    <Compile Include="Accounts\frmInvoiceSaleAllocModel.vb" />
+    <Compile Include="Accounts\frmInvoiceSaleModel.vb" />
+    <Compile Include="Accounts\frmInvoiceWaiveModel.vb" />
+    <Compile Include="Accounts\frmPaymentContraModel.vb" />
+    <Compile Include="Accounts\frmPaymentCustomerModel.vb" />
+    <Compile Include="Accounts\frmPaymentHRModel.vb" />
+    <Compile Include="Accounts\frmPaymentPurchModel.vb" />
+    <Compile Include="Accounts\frmPaymentSaleModel.vb" />
+    <Compile Include="Accounts\frmPaymentTravelModel.vb" />
+    <Compile Include="Accounts\frmPaymentTravelSetlModel.vb" />
+    <Compile Include="Accounts\frmPaymentVendorModel.vb" />
+    <Compile Include="Inventory\frmInvoicePOSModel.vb" />
+    <Compile Include="Inventory\frmInvoiceRateNoteModel.vb" />
+    <Compile Include="Inventory\frmInvoiceThirdPartyModel.vb" />
+    <Compile Include="Inventory\frmItemSBHeadListModel.vb" />
+    <Compile Include="Inventory\frmItemStockModel.vb" />
+    <Compile Include="Inventory\frmMatVouchModel.vb" />
+    <Compile Include="Inventory\frmPrimaryInvoicePurchModel.vb" />
+    <Compile Include="Inventory\frmPrimaryInvoiceSalesModel.vb" />
+    <Compile Include="Inventory\frmRejectNoteModel.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Purchase\frmCostingItemModel.vb" />
+    <Compile Include="Purchase\frmIDNoteModel.vb" />
+    <Compile Include="Purchase\frmPurEnqModel.vb" />
+    <Compile Include="Purchase\frmPurOrderModel.vb" />
+    <Compile Include="Transport\frmEvalModel.vb" />
+    <Compile Include="Transport\frmODNoteModel.vb" />
+    <Compile Include="Transport\frmODNReturnONModel.vb" />
+    <Compile Include="Transport\frmQuoteModel.vb" />
+    <Compile Include="Transport\frmTourAdvReqModel.vb" />
+    <Compile Include="Transport\frmTourExpRepModel.vb" />
+    <Compile Include="Transport\frmTransOModel.vb" />
+    <Compile Include="Transport\frmTransUtilModel.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.4.4</Version>
+    </PackageReference>
+    <PackageReference Include="GeoTimeZone">
+      <Version>4.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Google.Maps.Geocoding.NET-API">
+      <Version>1.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="SharpZipLib">
+      <Version>1.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="TimeZoneConverter">
+      <Version>3.3.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Forms\risersoft.app.mxform\risersoft.app.mxform.vbproj">
+      <Project>{0e5882d2-22b1-4716-99df-680a77ae3e19}</Project>
+      <Name>risersoft.app.mxform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Reports\risersoft.app.reports.erp\risersoft.app.reports.erp.vbproj">
+      <Project>{cad33710-07bc-4c86-af4c-3a24ba8ab6ba}</Project>
+      <Name>risersoft.app.reports.erp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\GST\Framework\GSTN.API.Library\GSTN.API.Library.csproj">
+      <Project>{b3fc4b26-9c24-43ff-b55f-3b1ae5642050}</Project>
+      <Name>GSTN.API.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\GST\Framework\risersoft.app.mxform.gst\risersoft.app.mxform.gst.vbproj">
+      <Project>{aa7fa4ce-13dd-4b73-87ef-dc98b6f6d207}</Project>
+      <Name>risersoft.app.mxform.gst</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Notes.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{F49A2A87-9EBA-40BF-9E77-A6DD9F3F9433}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>risersoft.app.accounts</RootNamespace>
+    <AssemblyName>risersoft.app.accounts</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>risersoft.app.accounts.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug2|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>risersoft.app.accounts.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>risersoft.app.accounts.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="'$(Configuration)' == 'Debug2'">
+      <ItemGroup>
+        <ProjectReference Include="..\..\..\Framework\Win\risersoft.shared.win\risersoft.shared.win.vbproj">
+          <Project>{6e272ec6-dc22-46f8-bb94-40780818737b}</Project>
+          <Name>risersoft.shared.win</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared\risersoft.shared.vbproj">
+          <Project>{678f7367-71bb-425c-a388-b45d25822ca3}</Project>
+          <Name>risersoft.shared</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.dotnetfx\risersoft.shared.dotnetfx.vbproj">
+          <Project>{3dc06d9d-b9b9-414c-b83c-2b9eeaaf5ea6}</Project>
+          <Name>risersoft.shared.dotnetfx</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.app.mxent\risersoft.app.mxent.vbproj">
+          <Project>{2693738b-de66-476d-afda-fd39e4579f27}</Project>
+          <Name>risersoft.app.mxent</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Win\risersoft.app.shared\risersoft.app.shared.vbproj">
+          <Project>{45cc2480-572f-409a-8c7a-30a31d6fe513}</Project>
+          <Name>risersoft.app.shared</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.db\risersoft.shared.db.vbproj">
+          <Project>{093E113D-C44C-404E-9B03-E301DD4DA319}</Project>
+          <Name>risersoft.shared.db</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.lm\risersoft.shared.lm.csproj">
+          <Project>{2A4A24C0-7357-4EA4-84B8-642F07B1FC5F}</Project>
+          <Name>risersoft.shared.lm</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.portable\risersoft.shared.portable.csproj">
+          <Project>{1742c540-4c7d-4397-8a46-f6a6ade33c5e}</Project>
+          <Name>risersoft.shared.portable</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.portable\risersoft.shared.portable.csproj">
+          <Project>{1742c540-4c7d-4397-8a46-f6a6ade33c5e}</Project>
+          <Name>risersoft.shared.portable</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.console\risersoft.shared.agent.csproj">
+          <Project>{39e6633f-2d15-4a82-a033-ac89108616e4}</Project>
+          <Name>risersoft.shared.agent</Name>
+        </ProjectReference>
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="risersoft.app.mxent">
+          <HintPath>..\..\..\common\depends\risersoft.app.mxent.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.app.shared">
+          <HintPath>..\..\..\common\depends\risersoft.app.shared.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared">
+          <HintPath>..\..\..\common\depends\risersoft.shared.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.dotnetfx">
+          <HintPath>..\..\..\common\depends\risersoft.shared.dotnetfx.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.db">
+          <HintPath>..\..\..\common\depends\risersoft.shared.db.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.lm">
+          <HintPath>..\..\..\common\depends\risersoft.shared.lm.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.win">
+          <HintPath>..\..\..\common\depends\risersoft.shared.win.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.portable">
+          <HintPath>..\..\..\common\depends\risersoft.shared.portable.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.agent">
+          <HintPath>..\..\..\common\depends\risersoft.shared.agent.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Reference Include="Infragistics.Shared,Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.Design">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.Misc">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.Misc.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinCalcManager,Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.UltraWinCalcManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinEditors,Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.UltraWinEditors.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinGrid,Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.UltraWinGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinTabControl,Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.UltraWinTabControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinTree,Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.UltraWinTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win,Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Xml.ReaderWriter.4.3.1\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="risersoft.app.config" />
+    <Import Include="risersoft.app.mxform.books" />
+    <Import Include="risersoft.app.shared" />
+    <Import Include="risersoft.shared" />
+    <Import Include="risersoft.shared.dotnetfx" />
+    <Import Include="risersoft.shared.portable" />
+    <Import Include="risersoft.shared.portable.Models.Nav" />
+    <Import Include="risersoft.shared.win" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAccSched.designer.vb">
+      <DependentUpon>frmAccSched.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccSched.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccVouchItem.Designer.vb">
+      <DependentUpon>frmAccVouchItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccVouchItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBankAccount.Designer.vb">
+      <DependentUpon>frmBankAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBankAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCostAssign.designer.vb">
+      <DependentUpon>frmCostAssign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCostAssign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCostCenter.designer.vb">
+      <DependentUpon>frmCostCenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCostCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCostCenterList.designer.vb">
+      <DependentUpon>frmCostCenterList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCostCenterList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCostElement.Designer.vb">
+      <DependentUpon>frmCostElement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCostElement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCostElemGroup.designer.vb">
+      <DependentUpon>frmCostElemGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCostElemGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCostElemGroupList.designer.vb">
+      <DependentUpon>frmCostElemGroupList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCostElemGroupList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCostVouch.designer.vb">
+      <DependentUpon>frmCostVouch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCostVouch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCostVouchItem.Designer.vb">
+      <DependentUpon>frmCostVouchItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCostVouchItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFinStatement.Designer.vb">
+      <DependentUpon>frmFinStatement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFinStatement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFixedAsset.designer.vb">
+      <DependentUpon>frmFixedAsset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFixedAsset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGLAccGroup.designer.vb">
+      <DependentUpon>frmGLAccGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGLAccGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGLAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAccVouch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGLAccGroupList.Designer.vb">
+      <DependentUpon>frmGLAccGroupList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGLAccGroupList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImprestAdjust.designer.vb">
+      <DependentUpon>frmImprestAdjust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmImprestAdjust.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceHRC.designer.vb">
+      <DependentUpon>frmInvoiceHRC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceHRC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceItem.designer.vb">
+      <DependentUpon>frmInvoiceItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceItemGST.designer.vb">
+      <DependentUpon>frmInvoiceItemGST.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceItemGST.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceItemPurch.designer.vb">
+      <DependentUpon>frmInvoiceItemPurch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceItemPurch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceOpen.designer.vb">
+      <DependentUpon>frmInvoiceOpen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceOpen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoicePurch.designer.vb">
+      <DependentUpon>frmInvoicePurch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoicePurch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoicePurchAlloc.designer.vb">
+      <DependentUpon>frmInvoicePurchAlloc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoicePurchAlloc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceRecast.designer.vb">
+      <DependentUpon>frmInvoiceRecast.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceRecast.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceSale.designer.vb">
+      <DependentUpon>frmInvoiceSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFixedAssetItem.designer.vb">
+      <DependentUpon>frmFixedAssetItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFixedAssetItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceSaleAlloc.designer.vb">
+      <DependentUpon>frmInvoiceSaleAlloc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceSaleAlloc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceWaive.Designer.vb">
+      <DependentUpon>frmInvoiceWaive.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceWaive.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentContra.designer.vb">
+      <DependentUpon>frmPaymentContra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentContra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentContraItem.designer.vb">
+      <DependentUpon>frmPaymentContraItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentContraItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentItemDet.designer.vb">
+      <DependentUpon>frmPaymentItemDet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentItemDet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentPurch.designer.vb">
+      <DependentUpon>frmPaymentPurch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentPurch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentSale.designer.vb">
+      <DependentUpon>frmPaymentSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentTravel.designer.vb">
+      <DependentUpon>frmPaymentTravel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentTravel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentVendor.designer.vb">
+      <DependentUpon>frmPaymentVendor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentVendor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentCustomer.designer.vb">
+      <DependentUpon>frmPaymentCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentHR.designer.vb">
+      <DependentUpon>frmPaymentHR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentHR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaymentTravelSetl.designer.vb">
+      <DependentUpon>frmPaymentTravelSetl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaymentTravelSetl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="frmGLAccount.Designer.vb">
+      <DependentUpon>frmGLAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAccVouch.Designer.vb">
+      <DependentUpon>frmAccVouch.vb</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAccSched.resx">
+      <DependentUpon>frmAccSched.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccVouchItem.resx">
+      <DependentUpon>frmAccVouchItem.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBankAccount.resx">
+      <DependentUpon>frmBankAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCostAssign.resx">
+      <DependentUpon>frmCostAssign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCostCenter.resx">
+      <DependentUpon>frmCostCenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCostCenterList.resx">
+      <DependentUpon>frmCostCenterList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCostElement.resx">
+      <DependentUpon>frmCostElement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCostElemGroup.resx">
+      <DependentUpon>frmCostElemGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCostElemGroupList.resx">
+      <DependentUpon>frmCostElemGroupList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCostVouch.resx">
+      <DependentUpon>frmCostVouch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCostVouchItem.resx">
+      <DependentUpon>frmCostVouchItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFinStatement.resx">
+      <DependentUpon>frmFinStatement.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFixedAsset.resx">
+      <DependentUpon>frmFixedAsset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGLAccGroup.resx">
+      <DependentUpon>frmGLAccGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGLAccount.resx">
+      <DependentUpon>frmGLAccount.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAccVouch.resx">
+      <DependentUpon>frmAccVouch.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGLAccGroupList.resx">
+      <DependentUpon>frmGLAccGroupList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImprestAdjust.resx">
+      <DependentUpon>frmImprestAdjust.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceHRC.resx">
+      <DependentUpon>frmInvoiceHRC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceItem.resx">
+      <DependentUpon>frmInvoiceItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceItemGST.resx">
+      <DependentUpon>frmInvoiceItemGST.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceItemPurch.resx">
+      <DependentUpon>frmInvoiceItemPurch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceOpen.resx">
+      <DependentUpon>frmInvoiceOpen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoicePurch.resx">
+      <DependentUpon>frmInvoicePurch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoicePurchAlloc.resx">
+      <DependentUpon>frmInvoicePurchAlloc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceRecast.resx">
+      <DependentUpon>frmInvoiceRecast.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceSale.resx">
+      <DependentUpon>frmInvoiceSale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFixedAssetItem.resx">
+      <DependentUpon>frmFixedAssetItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceSaleAlloc.resx">
+      <DependentUpon>frmInvoiceSaleAlloc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceWaive.resx">
+      <DependentUpon>frmInvoiceWaive.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentContra.resx">
+      <DependentUpon>frmPaymentContra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentContraItem.resx">
+      <DependentUpon>frmPaymentContraItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentItemDet.resx">
+      <DependentUpon>frmPaymentItemDet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentPurch.resx">
+      <DependentUpon>frmPaymentPurch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentSale.resx">
+      <DependentUpon>frmPaymentSale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentTravel.resx">
+      <DependentUpon>frmPaymentTravel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentVendor.resx">
+      <DependentUpon>frmPaymentVendor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentCustomer.resx">
+      <DependentUpon>frmPaymentCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentHR.resx">
+      <DependentUpon>frmPaymentHR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaymentTravelSetl.resx">
+      <DependentUpon>frmPaymentTravelSetl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Windows\risersoft.app.config\risersoft.app.config.vbproj">
+      <Project>{6e72e896-afce-497c-95ed-676f43b862f1}</Project>
+      <Name>risersoft.app.config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Forms\risersoft.app.mxform\risersoft.app.mxform.vbproj">
+      <Project>{0e5882d2-22b1-4716-99df-680a77ae3e19}</Project>
+      <Name>risersoft.app.mxform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\risersoft.app.mxform.books\risersoft.app.mxform.books.vbproj">
+      <Project>{ac11bdc5-8644-4c2a-80bb-cef3c8bb8fe5}</Project>
+      <Name>risersoft.app.mxform.books</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

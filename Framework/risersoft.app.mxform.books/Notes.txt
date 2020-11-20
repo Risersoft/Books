@@ -1,0 +1,5 @@
+﻿MatVouch -> HasTransitTransfer -> Condition 
+
+If myUtils.cValTN(rMCSp("TrRecvMvtCode")) > 0 Then
+   r1("hastransittransfer") = If(String.IsNullOrWhiteSpace(myUtils.cStrTN(rMCSp("srcdestypeitem"))), 2, 1)
+End If

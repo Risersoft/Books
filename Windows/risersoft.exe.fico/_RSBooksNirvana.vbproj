@@ -1,0 +1,596 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4A079F94-0DF9-4A3D-9B6E-0CE7CEF8DDAE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>RSBooksNirvana.Utils</StartupObject>
+    <RootNamespace>RSBooksNirvana</RootNamespace>
+    <AssemblyName>RSBooksNirvana</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <CefSharpAnyCpuSupport>true</CefSharpAnyCpuSupport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RSBooksNirvana.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RSBooksNirvana.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug2|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RSBooksNirvana.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Choose>
+    <When Condition="'$(Configuration)' == 'Debug2'">
+      <ItemGroup>
+        <ProjectReference Include="..\..\..\Framework\Win\risersoft.shared.win\risersoft.shared.win.vbproj">
+          <Project>{6e272ec6-dc22-46f8-bb94-40780818737b}</Project>
+          <Name>risersoft.shared.win</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared\risersoft.shared.vbproj">
+          <Project>{678f7367-71bb-425c-a388-b45d25822ca3}</Project>
+          <Name>risersoft.shared</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.app.mxent\risersoft.app.mxent.vbproj">
+          <Project>{2693738b-de66-476d-afda-fd39e4579f27}</Project>
+          <Name>risersoft.app.mxent</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Win\risersoft.app.shared\risersoft.app.shared.vbproj">
+          <Project>{45cc2480-572f-409a-8c7a-30a31d6fe513}</Project>
+          <Name>risersoft.app.shared</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.db\risersoft.shared.db.vbproj">
+          <Project>{093E113D-C44C-404E-9B03-E301DD4DA319}</Project>
+          <Name>risersoft.shared.db</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.lm\risersoft.shared.lm.csproj">
+          <Project>{2A4A24C0-7357-4EA4-84B8-642F07B1FC5F}</Project>
+          <Name>risersoft.shared.lm</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.dal\risersoft.shared.dal.vbproj">
+          <Project>{68b77483-9004-404b-b649-0e8bb780158e}</Project>
+          <Name>risersoft.shared.dal</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.cloud\risersoft.shared.cloud.vbproj">
+          <Project>{f5b5afa9-af4a-4b86-8d8d-502976813633}</Project>
+          <Name>risersoft.shared.cloud</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.app.mxengg\risersoft.app.mxengg.vbproj">
+          <Project>{4a71d8b3-6c50-42fa-b4c1-cf9aaf4b9652}</Project>
+          <Name>risersoft.app.mxengg</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Win\risersoft.app2.shared\risersoft.app2.shared.vbproj">
+          <Project>{b47e653f-a85b-447f-8993-705d82410a95}</Project>
+          <Name>risersoft.app2.shared</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Web\risersoft.shared.web\risersoft.shared.web.vbproj">
+          <Project>{cdfe0943-b942-4857-a99d-98230791fd8d}</Project>
+          <Name>risersoft.shared.web</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.portable\risersoft.shared.portable.csproj">
+          <Project>{1742c540-4c7d-4397-8a46-f6a6ade33c5e}</Project>
+          <Name>risersoft.shared.portable</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.sync\risersoft.shared.sync.vbproj">
+          <Project>{68c8482a-314c-4460-b70d-06b1b35f0cca}</Project>
+          <Name>risersoft.shared.sync</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.app.dataporter\risersoft.app.dataporter.vbproj">
+          <Project>{419585b1-cecd-49bc-a00b-48b0c6725e7f}</Project>
+          <Name>risersoft.app.dataporter</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Win\risersoft.chrome.winforms\risersoft.chrome.winforms.vbproj">
+          <Project>{17200f2d-4e3c-456b-a26f-b03e4d2f462b}</Project>
+          <Name>risersoft.chrome.winforms</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Win\risersoft.activation\_RSLicenseActivation.vbproj">
+          <Project>{3b0f69db-bfd9-44a3-be20-9dc374aed55c}</Project>
+          <Name>_RSLicenseActivation</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Win\risersoft.activation\_RSLicenseActivation.vbproj">
+          <Project>{3b0f69db-bfd9-44a3-be20-9dc374aed55c}</Project>
+          <Name>RSLicenseActivation</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\shared\risersoft.shared.htmlui\risersoft.shared.htmlui.csproj">
+          <Project>{f2ef3b35-48e7-4c93-b403-e4140c1221e1}</Project>
+          <Name>risersoft.shared.htmlui</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.dotnetfx\risersoft.shared.dotnetfx.vbproj">
+          <Project>{3dc06d9d-b9b9-414c-b83c-2b9eeaaf5ea6}</Project>
+          <Name>risersoft.shared.dotnetfx</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\..\..\Framework\Shared\risersoft.shared.console\risersoft.shared.agent.csproj">
+          <Project>{39e6633f-2d15-4a82-a033-ac89108616e4}</Project>
+          <Name>risersoft.shared.agent</Name>
+        </ProjectReference>
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="risersoft.app.mxent">
+          <HintPath>..\..\..\common\depends\risersoft.app.mxent.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.app.shared">
+          <HintPath>..\..\..\common\depends\risersoft.app.shared.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared">
+          <HintPath>..\..\..\common\depends\risersoft.shared.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.dotnetfx">
+          <HintPath>..\..\..\common\depends\risersoft.shared.dotnetfx.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.db">
+          <HintPath>..\..\..\common\depends\risersoft.shared.db.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.dal">
+          <HintPath>..\..\..\common\depends\risersoft.shared.dal.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.web">
+          <HintPath>..\..\..\common\depends\risersoft.shared.web.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.lm">
+          <HintPath>..\..\..\common\depends\risersoft.shared.lm.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.win">
+          <HintPath>..\..\..\common\depends\risersoft.shared.win.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.cloud">
+          <HintPath>..\..\..\common\depends\risersoft.shared.cloud.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.app.mxengg">
+          <HintPath>..\..\..\common\depends\risersoft.app.mxengg.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.app2.shared">
+          <HintPath>..\..\..\common\depends\risersoft.app2.shared.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.portable">
+          <HintPath>..\..\..\common\depends\risersoft.shared.portable.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.sync">
+          <HintPath>..\..\..\common\depends\risersoft.shared.sync.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.app.dataporter">
+          <HintPath>..\..\..\common\depends\risersoft.app.dataporter.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.chrome.winforms">
+          <HintPath>..\..\..\common\depends\risersoft.chrome.winforms.dll</HintPath>
+        </Reference>
+        <Reference Include="RSLicenseActivation">
+          <HintPath>..\..\..\common\depends\RSLicenseActivation.exe</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.htmlui">
+          <HintPath>..\..\..\common\depends\risersoft.shared.htmlui.dll</HintPath>
+        </Reference>
+        <Reference Include="risersoft.shared.agent">
+          <HintPath>..\..\..\common\depends\risersoft.shared.agent.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Reference Include="Infragistics.Shared">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.Misc">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.Misc.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinDock">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.UltraWinDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinEditors,Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.UltraWinEditors.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinExplorerBar,Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.UltraWinExplorerBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinGanttView">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.UltraWinGanttView.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinGrid,Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.UltraWinGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinTabControl,Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.UltraWinTabControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinToolbars,Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.UltraWinToolbars.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win.UltraWinTree,Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.UltraWinTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Win,Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <HintPath>..\..\..\Common\lib\Infragistics\Infragistics.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.SqlServer.Management.SmoMetadataProvider, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\common\depends\Microsoft.SqlServer.Management.SmoMetadataProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\common\depends\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="NAppUpdate.Framework">
+      <HintPath>..\..\..\common\lib\NAppUpdate.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="risersoft.shared.resource">
+      <HintPath>..\..\..\common\depends\risersoft.shared.resource.dll</HintPath>
+    </Reference>
+    <Reference Include="SpreadsheetGear, Version=6.0.3.236, Culture=neutral, PublicKeyToken=39c186f5904944ec, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\common\lib\SpreadSheetGear.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="risersoft.shared.dotnetfx" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsExtendAppFICO.vb" />
+    <Compile Include="frmAboutBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utils.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmAboutBox.resx">
+      <DependentUpon>frmAboutBox.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Common\depends\rs.appdb">
+      <Link>rs.appdb</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\..\..\Common\depends\rs.appdb">
+      <Link>rs.appdb</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <EmbeddedResource Include="..\..\..\common\depends\risersoft.licdbp">
+      <Link>risersoft.licdbp</Link>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Forms\risersoft.app.mxform\risersoft.app.mxform.vbproj">
+      <Project>{0e5882d2-22b1-4716-99df-680a77ae3e19}</Project>
+      <Name>risersoft.app.mxform</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Reports\risersoft.app.reports.gst\risersoft.app.reports.gst.vbproj">
+      <Project>{3b307ae8-bae2-406d-9c44-51db92850361}</Project>
+      <Name>risersoft.app.reports.gst</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\GST\Framework\GSTN.API.Library\GSTN.API.Library.csproj">
+      <Project>{b3fc4b26-9c24-43ff-b55f-3b1ae5642050}</Project>
+      <Name>GSTN.API.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Web\risersoft.shared.web.mvc\risersoft.shared.web.mvc.csproj">
+      <Project>{e0cc17dc-880d-47b0-b8f5-1c981f76c662}</Project>
+      <Name>risersoft.shared.web.mvc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Reports\risersoft.app.reports.erp\risersoft.app.reports.erp.vbproj">
+      <Project>{cad33710-07bc-4c86-af4c-3a24ba8ab6ba}</Project>
+      <Name>risersoft.app.reports.erp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Windows\risersoft.app.config\risersoft.app.config.vbproj">
+      <Project>{6e72e896-afce-497c-95ed-676f43b862f1}</Project>
+      <Name>risersoft.app.config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\GST\Framework\risersoft.app.mxform.gst\risersoft.app.mxform.gst.vbproj">
+      <Project>{aa7fa4ce-13dd-4b73-87ef-dc98b6f6d207}</Project>
+      <Name>risersoft.app.mxform.gst</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Framework\risersoft.app.mxform.books\risersoft.app.mxform.books.vbproj">
+      <Project>{ac11bdc5-8644-4c2a-80bb-cef3c8bb8fe5}</Project>
+      <Name>risersoft.app.mxform.books</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\risersoft.app.inventory\risersoft.app.inventory.vbproj">
+      <Project>{fba4c657-8abe-4fcd-88f0-f887364e852e}</Project>
+      <Name>risersoft.app.inventory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\risersoft.app.purchase\risersoft.app.purchase.vbproj">
+      <Project>{e7406eb0-09ec-43de-b821-826da4d6de9f}</Project>
+      <Name>risersoft.app.purchase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\risersoft.app.transport\risersoft.app.transport.vbproj">
+      <Project>{ead0f160-e15e-49ea-bcf3-cb59398d4010}</Project>
+      <Name>risersoft.app.transport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\risersoft.app.accounts\risersoft.app.accounts.vbproj">
+      <Project>{F49A2A87-9EBA-40BF-9E77-A6DD9F3F9433}</Project>
+      <Name>risersoft.app.accounts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\GST\Windows\risersoft.app.exvat\risersoft.app.exvat.vbproj">
+      <Project>{8fa85d23-7a63-4a15-bfbd-3edca0a586a4}</Project>
+      <Name>risersoft.app.exvat</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hisab_Kitab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alankit_GSP.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoCAD.NET.Core">
+      <Version>24.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="C1.Web.Mvc">
+      <Version>4.5.20202.286</Version>
+    </PackageReference>
+    <PackageReference Include="CefSharp.WinForms">
+      <Version>85.3.130</Version>
+    </PackageReference>
+    <PackageReference Include="EntityFramework">
+      <Version>6.4.4</Version>
+    </PackageReference>
+    <PackageReference Include="Jint">
+      <Version>2.11.58</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.Cors">
+      <Version>5.2.7</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.Identity.Core">
+      <Version>2.2.3</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.Mvc">
+      <Version>5.2.7</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Owin">
+      <Version>5.2.7</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Azure.ActiveDirectory.GraphClient">
+      <Version>2.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Bcl.Build">
+      <Version>1.0.21</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.ClearScript">
+      <Version>6.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Data.Services.Client">
+      <Version>5.8.4</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory">
+      <Version>5.2.8</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Protocol.Extensions">
+      <Version>1.0.4.403061554</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect">
+      <Version>6.8.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Net.Http">
+      <Version>2.2.29</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.Platforms">
+      <Version>3.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NETCore.Targets">
+      <Version>3.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Owin.Cors">
+      <Version>4.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Owin.Host.HttpListener">
+      <Version>4.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Owin.Host.SystemWeb">
+      <Version>4.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Owin.Hosting">
+      <Version>4.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Owin.Security.Cookies">
+      <Version>4.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Owin.Security.Facebook">
+      <Version>4.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Owin.Security.Google">
+      <Version>4.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <Version>4.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Owin.Security.OAuth">
+      <Version>4.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Owin.Security.OpenIdConnect">
+      <Version>4.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Win32.Registry">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="RestSharp">
+      <Version>106.11.7</Version>
+    </PackageReference>
+    <PackageReference Include="Serilog">
+      <Version>2.10.0</Version>
+    </PackageReference>
+    <PackageReference Include="Serilog.Sinks.Console">
+      <Version>3.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.EJ2.MVC5">
+      <Version>18.3.0.47</Version>
+    </PackageReference>
+    <PackageReference Include="System.Collections.Concurrent">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.ComponentModel.Annotations">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.ComponentModel.EventBasedAsync">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.ComponentModel.TypeConverter">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SqlClient">
+      <Version>4.8.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite">
+      <Version>1.0.113.6</Version>
+    </PackageReference>
+    <PackageReference Include="System.Data.SQLite.Core">
+      <Version>1.0.113.6</Version>
+    </PackageReference>
+    <PackageReference Include="System.Diagnostics.Debug">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Drawing.Common">
+      <Version>5.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Private.Uri">
+      <Version>4.3.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.Reflection.TypeExtensions">
+      <Version>4.7.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime">
+      <Version>4.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Security.Cryptography.Algorithms">
+      <Version>4.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Security.Cryptography.X509Certificates">
+      <Version>4.3.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.ServiceModel.NetTcp">
+      <Version>4.8.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.ServiceModel.Primitives">
+      <Version>4.8.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>rem xcopy /y/s "$(SolutionDir)..\common\lib\AnyCPU\*.*" "$(TargetDir)"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

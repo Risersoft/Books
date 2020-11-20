@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "risersoft.shared.web.mvc", "..\Common\Web\risersoft.shared.web.mvc\risersoft.shared.web.mvc.csproj", "{E0CC17DC-880D-47B0-B8F5-1C981F76C662}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "risersoft.app.mxform", "..\Common\Forms\risersoft.app.mxform\risersoft.app.mxform.vbproj", "{0E5882D2-22B1-4716-99DF-680A77AE3E19}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "risersoft.app.mxform.gst", "..\GST\Framework\risersoft.app.mxform.gst\risersoft.app.mxform.gst.vbproj", "{AA7FA4CE-13DD-4B73-87EF-DC98B6F6D207}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSTN.API.Library", "..\GST\Framework\GSTN.API.Library\GSTN.API.Library.csproj", "{B3FC4B26-9C24-43FF-B55F-3B1AE5642050}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "risersoft.app.reports.erp", "..\Common\Reports\risersoft.app.reports.erp\risersoft.app.reports.erp.vbproj", "{CAD33710-07BC-4C86-AF4C-3A24BA8AB6BA}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "BooksNirvana", "Web\BooksNirvana\BooksNirvana.vbproj", "{19A34F5E-4368-4E3C-86E7-D0FC28C6590A}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "risersoft.app.mxform.books", "Framework\risersoft.app.mxform.books\risersoft.app.mxform.books.vbproj", "{AC11BDC5-8644-4C2A-80BB-CEF3C8BB8FE5}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "risersoft.app.reports.gst", "..\Common\Reports\risersoft.app.reports.gst\risersoft.app.reports.gst.vbproj", "{3B307AE8-BAE2-406D-9C44-51DB92850361}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0CC17DC-880D-47B0-B8F5-1C981F76C662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0CC17DC-880D-47B0-B8F5-1C981F76C662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0CC17DC-880D-47B0-B8F5-1C981F76C662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0CC17DC-880D-47B0-B8F5-1C981F76C662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E5882D2-22B1-4716-99DF-680A77AE3E19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E5882D2-22B1-4716-99DF-680A77AE3E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E5882D2-22B1-4716-99DF-680A77AE3E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E5882D2-22B1-4716-99DF-680A77AE3E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7FA4CE-13DD-4B73-87EF-DC98B6F6D207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7FA4CE-13DD-4B73-87EF-DC98B6F6D207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7FA4CE-13DD-4B73-87EF-DC98B6F6D207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7FA4CE-13DD-4B73-87EF-DC98B6F6D207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3FC4B26-9C24-43FF-B55F-3B1AE5642050}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3FC4B26-9C24-43FF-B55F-3B1AE5642050}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3FC4B26-9C24-43FF-B55F-3B1AE5642050}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3FC4B26-9C24-43FF-B55F-3B1AE5642050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAD33710-07BC-4C86-AF4C-3A24BA8AB6BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD33710-07BC-4C86-AF4C-3A24BA8AB6BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD33710-07BC-4C86-AF4C-3A24BA8AB6BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD33710-07BC-4C86-AF4C-3A24BA8AB6BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19A34F5E-4368-4E3C-86E7-D0FC28C6590A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19A34F5E-4368-4E3C-86E7-D0FC28C6590A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19A34F5E-4368-4E3C-86E7-D0FC28C6590A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19A34F5E-4368-4E3C-86E7-D0FC28C6590A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC11BDC5-8644-4C2A-80BB-CEF3C8BB8FE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC11BDC5-8644-4C2A-80BB-CEF3C8BB8FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC11BDC5-8644-4C2A-80BB-CEF3C8BB8FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC11BDC5-8644-4C2A-80BB-CEF3C8BB8FE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B307AE8-BAE2-406D-9C44-51DB92850361}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B307AE8-BAE2-406D-9C44-51DB92850361}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B307AE8-BAE2-406D-9C44-51DB92850361}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B307AE8-BAE2-406D-9C44-51DB92850361}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A87586DC-4BD0-4ACD-85DF-29AD16C267E9}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://rsds.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Auth\\Framework\\risersoft.shared.web.mvc\\risersoft.shared.web.mvc.csproj
+		SccProjectName1 = ../Auth/Framework/risersoft.shared.web.mvc
+		SccLocalPath1 = ..\\Auth\\Framework\\risersoft.shared.web.mvc
+		SccProjectUniqueName2 = ..\\Auth\\Forms\\risersoft.app.mxform\\risersoft.app.mxform.vbproj
+		SccProjectName2 = ../Auth/Forms/risersoft.app.mxform
+		SccLocalPath2 = ..\\Auth\\Forms\\risersoft.app.mxform
+		SccProjectUniqueName3 = ..\\GST\\Framework\\risersoft.app.mxform.gst\\risersoft.app.mxform.gst.vbproj
+		SccProjectName3 = ../GST/Framework/risersoft.app.mxform.gst
+		SccLocalPath3 = ..\\GST\\Framework\\risersoft.app.mxform.gst
+		SccProjectUniqueName4 = ..\\Auth\\Reports\\risersoft.app.reports.erp\\risersoft.app.reports.erp.vbproj
+		SccProjectName4 = ../Auth/Reports/risersoft.app.reports.erp
+		SccLocalPath4 = ..\\Auth\\Reports\\risersoft.app.reports.erp
+		SccProjectUniqueName5 = ..\\GST\\Framework\\GSTN.API.Library\\GSTN.API.Library.csproj
+		SccProjectName5 = ../GST/Framework/GSTN.API.Library
+		SccLocalPath5 = ..\\GST\\Framework\\GSTN.API.Library
+		SccProjectUniqueName6 = Web\\BooksNirvana\\BooksNirvana.vbproj
+		SccProjectName6 = Web/BooksNirvana
+		SccLocalPath6 = Web\\BooksNirvana
+		SccProjectUniqueName7 = Framework\\risersoft.app.mxform.books\\risersoft.app.mxform.books.vbproj
+		SccProjectName7 = Framework/risersoft.app.mxform.books
+		SccLocalPath7 = Framework\\risersoft.app.mxform.books
+		SccProjectUniqueName8 = ..\\Auth\\Reports\\risersoft.app.reports.gst\\risersoft.app.reports.gst.vbproj
+		SccProjectName8 = ../Auth/Reports/risersoft.app.reports.gst
+		SccLocalPath8 = ..\\Auth\\Reports\\risersoft.app.reports.gst
+	EndGlobalSection
+EndGlobal
