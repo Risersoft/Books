@@ -432,7 +432,7 @@
       <Version>4.5.20202.286</Version>
     </PackageReference>
     <PackageReference Include="CefSharp.WinForms">
-      <Version>85.3.130</Version>
+      <Version>86.0.241</Version>
     </PackageReference>
     <PackageReference Include="EntityFramework">
       <Version>6.4.4</Version>
