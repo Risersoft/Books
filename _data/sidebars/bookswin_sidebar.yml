@@ -25,11 +25,58 @@ entries:
     url: /books-nirvana-win/introduction.html
     folderitems:
     -
+    
+  - title: Configuration   
+    output: web, pdf
+
+    folderitems:    
+    
+    - title: Pricing Procedure
+      url: /books-nirvana-win/pricing-procedure.html
+      output: web, pdf 
+
+    - title: Pricing Element
+      url: /books-nirvana-win/price-element.html
+      output: web, pdf  
+
+    - title: Movement Code
+      url: /books-nirvana-win/movement-code.html
+      output: web, pdf        
+      
+    - title: Account Key
+      url: /books-nirvana-win/account-key.html
+      output: web, pdf
+
+    - title: DocNumSys
+      url: /books-nirvana-win/docnumsys.html
+      output: web, pdf
+      
+    - title: Tax Area
+      url: /books-nirvana-win/tax-area.html
+      output: web, pdf
+      
+    - title: Work Flow
+      url: /books-nirvana-win/work-flow.html
+      output: web, pdf
+      
 
   - title: Master Data    
     output: web, pdf
 
-    folderitems:
+    folderitems:    
+    
+    - title: Dashboard
+      url: /books-nirvana-win/dashboard.html
+      output: web, pdf 
+
+    - title: Company
+      url: /books-nirvana-win/company.html
+      output: web, pdf  
+
+    - title: Campus
+      url: /books-nirvana-win/campus.html
+      output: web, pdf        
+      
     - title: Vendor
       url: /books-nirvana-win/vendor.html
       output: web, pdf
