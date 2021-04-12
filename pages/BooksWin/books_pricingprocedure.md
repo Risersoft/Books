@@ -29,6 +29,9 @@ Click on **Configuration-> Price Procedures**. **Price Procedures** list will ap
 
 ![](/images/PricingProcedureList.png)
 
+![](/images/PricingProcedureListing.png)
+
+
 ## Edit
 
 **Step-1**: Select the price procedure from price procedures list that you want to edit. **Right click** and select **Edit Pricing Procedures** option. **Pricing Procedures** form will appear.

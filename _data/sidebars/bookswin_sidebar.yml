@@ -75,52 +75,84 @@ entries:
 
     - title: Campus
       url: /books-nirvana-win/campus.html
-      output: web, pdf        
-      
-    - title: Vendor
-      url: /books-nirvana-win/vendor.html
       output: web, pdf
 
-    - title: Customer
-      url: /books-nirvana-win/customer.html
+    - title: Post Period
+      url: /books-nirvana-win/post-period.html
       output: web, pdf
-      
-    - title: Measurement Property
-      url: /books-nirvana-win/measurement-property.html
+
+    - title: Material Department
+      url: /books-nirvana-win/material-department.html
       output: web, pdf
-      
-    - title: Item Unit
-      url: /books-nirvana-win/item-unit.html
+
+    - title: Cost Center 
+      url: /books-nirvana-win/cost-center.html
       output: web, pdf
-       
-    - title: Item Schedule
-      url: /books-nirvana-win/item-schedule.html
-      output: web, pdf
-      
-    - title: Item Sub Category
-      url: /books-nirvana-win/item-sub-category.html
+
+    - title: Cost Element
+      url: /books-nirvana-win/cost-element.html
       output: web, pdf
       
     - title: Item
       url: /books-nirvana-win/item.html
       output: web, pdf
-     
+
+    - title: Item Sub Category
+      url: /books-nirvana-win/item-sub-category.html
+      output: web, pdf
+
+    - title: Item Unit
+      url: /books-nirvana-win/item-unit.html
+      output: web, pdf
+
+    - title: Measurement Property
+      url: /books-nirvana-win/measurement-property.html
+      output: web, pdf
+
+    - title: Item Stock Book Header
+      url: /books-nirvana-win/item-stock-book-header.html
+      output: web, pdf      
+      
+    - title: Item Schedule
+      url: /books-nirvana-win/item-schedule.html
+      output: web, pdf
+
+    - title: HSN Sac
+      url: /books-nirvana-win/hsn-sac.html
+      output: web, pdf
+
     - title: Accounting Group 
       url: /books-nirvana-win/accounting-group.html
       output: web, pdf
-      
+
     - title: Account
       url: /books-nirvana-win/account.html
       output: web, pdf
-      
+
     - title: Bank
       url: /books-nirvana-win/bank.html
       output: web, pdf
-      
+
     - title: Bank Account
       url: /books-nirvana-win/bank-account.html
       output: web, pdf
+
+    - title: Customer
+      url: /books-nirvana-win/customer.html
+      output: web, pdf
+
+    - title: Vendor
+      url: /books-nirvana-win/vendor.html
+      output: web, pdf
       
+    - title: Employee
+      url: /books-nirvana-win/employee.html
+      output: web, pdf
+
+    - title: Person
+      url: /books-nirvana-win/person.html
+      output: web, pdf      
+       
     - title: Schedule Master
       url: /books-nirvana-win/schedule-master.html
       output: web, pdf
@@ -128,6 +160,14 @@ entries:
     - title: Fixed Asset
       url: /books-nirvana-win/fixed-asset.html
       output: web, pdf
+      
+    - title: Lender
+      url: /books-nirvana-win/lender.html
+      output: web, pdf
+
+    - title: Associate
+      url: /books-nirvana-win/associate.html
+      output: web, pdf       
       
   - title: Purchase
     
@@ -153,11 +193,7 @@ entries:
     - title: Material Voucher
       url: /books-nirvana-win/material-voucher-purchase.html
       output: web, pdf
-      
-      
-    - title: Movement Code List
-      url: /books-nirvana-win/movement-code-list.html
-      output: web, pdf
+ 
 
     - title: Purchase Invoices
       url: /books-nirvana-win/purchase-invoices.html
@@ -318,8 +354,7 @@ entries:
 
     - title: Transfer to Subcontracting Vendor (421) and Receive against Transfer (425)
       url: /books-nirvana-win/transfer-to-subcontracting-vendor(421)-and-receive-against-transfer(425).html
-      output: web
-      
+      output: web     
              
 
     - title: Testing Against Sales Order
@@ -365,6 +400,22 @@ entries:
     - title: Transfer Inter Unit for Job Work (Meerut to Hapur)
       url: /books-nirvana-win/transfer-inter-unit-for-job-work-(meerut-to-hapur).html
       output: web  
+      
+    - title: Bank Charges Deduction Process
+      url: /books-nirvana-win/bank-charges-deduct-by-bank.html
+      output: web
+
+    - title: TCS/Custom Duty Calculation
+      url: /books-nirvana-win/tcs-custom-duty-calculation.html
+      output: web 
+
+    - title: Consignment Stock from Vendor
+      url: /books-nirvana-win/consignment-stock-from-vendor.html
+      output: web 
+
+    - title: LD Invoice by Customer
+      url: /books-nirvana-win/LD-Invoice-by-customer.html
+      output: web      
 
   - title: Terminology 
     url: /books-nirvana-win/terminology.html   

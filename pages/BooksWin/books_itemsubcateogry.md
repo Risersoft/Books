@@ -11,6 +11,7 @@ comments: false
 # Item Sub Category
 
 ## Create
+
 **Step-1**: Click on **New -> Material-> Item Sub Category**. **Item Sub Category** form will appear.
 
 ![](/images/item-subcat-create.jpg)

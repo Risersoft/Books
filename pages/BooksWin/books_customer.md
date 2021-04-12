@@ -24,7 +24,7 @@ You can create new customer and its parties by the following steps:
 
 **Step-3**: If you want to add other branches or other parties of vendor, click on **Add New** button. **Selectable Party** form will appear.
 
-Step-4: Fill the details in **Address** tab, and other tabs also. If you want to **copy address from main party**, click on **Copy Address from Main Party** button. Click on **OK**.
+**Step-4:** Fill the details in **Address** tab, and other tabs also. If you want to **copy address from main party**, click on **Copy Address from Main Party** button. Click on **OK**.
 
 ![](/images/customer-create-info-selectable-party.png)
 

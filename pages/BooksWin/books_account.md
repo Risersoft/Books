@@ -10,8 +10,6 @@ comments: false
 
 # Account
 
-
-
 ## Create
 
 You can create new account by the following steps:
@@ -40,7 +38,6 @@ You can create new account by the following steps:
 **Step-1**: Select the **Account** from account list that you want to edit. **Right click** on it. Select **Edit GL Account** option. Account form will open.
 
 ![](/images/account-edit.jpg)
-
 
 
 **Step-2**: Edit the details and click on **Save**.

@@ -16,9 +16,41 @@ comments: false
 
 ![](/images/payment-vendor-create.jpg)
 
+### Payment Type:
+
+**I-Information** - If we are not giving any payment to vendor but want to enter any type of Penalty or Retention.
+We will use payment type Information.
+
+![](/images/payment-type-info.png)
+
+**R-Return** - If we want to enter reverse entry of payment we will use Payment Type - Return.
+
+![](/images/payment-type-return.png)
+
+**S-Settlement** - We can settle pending invoices and pending payments.
+
+TDS Base Amount - TDS Base Amount related to TDS amount, we will enter total amount on which TDS are deducting.
+
+![](/images/payment-type-settle.png)
+
+**T-Transaction** - If we want to enter advance payment or bill wise payment, we can use this type.
+ 
+In bill wise payment, balance of Invoice will be less according to payment amount.
+
+If we want to enter Only TDS entry we will use Transaction Type.
+
+![](/images/payment-type-trans.png)
+
+### Payment Mode:
+
+In Mode tab, we can select different type of payment mode like cheque/NEFT and RTGS etc.
+
+We can enter Document No., Document Date and Bank Name also.
+
+![](/images/payment-mode.png)
+
 **STEP-2**: Fill the details and click on **Save**.
 
-![](/images/payment-vendor-create-save.jpg)
 
 ## List
 
