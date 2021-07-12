@@ -12,18 +12,18 @@ comments: false
 
 To view details about sale, click on **Sale->---**
 
-![](/images/sale.jpg)
+![](/images/sale.png)
 
 ## Counter Party Invoice
 
 To view sale counter party invoices, click on **Counter Party Invoices**.
 
-![](/images/sale-counter-party-inv.jpg)
+![](/images/sale-counter-party-inv.png)
 
 ## Sale Invoice Matching
 
 To view sale invoice matching with counter party invoice, click on **Sale Invoices Matching**.
 
-![](/images/sale-invoice-match.jpg)
+![](/images/sale-invoice-match.png)
 
 

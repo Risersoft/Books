@@ -8,8 +8,8 @@ hide_sidebar: false
 comments: false
 ---
 
-## Schedule Manager
+# Schedule Manager
 
 To view schedule master list, click on **Accounts-> Schedule Master**
 
-![](/images/image8_340.jpg)
+![](/images/schedule-manager.png)

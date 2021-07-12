@@ -28,8 +28,7 @@ entries:
     
   - title: Configuration   
     output: web, pdf
-
-    folderitems:    
+    folderitems:  
     
     - title: Pricing Procedure
       url: /books-nirvana-win/pricing-procedure.html
@@ -37,11 +36,19 @@ entries:
 
     - title: Pricing Element
       url: /books-nirvana-win/price-element.html
-      output: web, pdf  
+      output: web, pdf
+      
+      subfolders:  
+      - title: Movement Code
+        output: web
+        subfolderitems:
+        - title: Create and Edit
+          url: /books-nirvana-win/movement-code.html
+          output: web
 
-    - title: Movement Code
-      url: /books-nirvana-win/movement-code.html
-      output: web, pdf        
+        - title: List
+          url: /books-nirvana-win/movement-code-list.html
+          output: web           
       
     - title: Account Key
       url: /books-nirvana-win/account-key.html
@@ -169,23 +176,26 @@ entries:
       url: /books-nirvana-win/associate.html
       output: web, pdf       
       
-  - title: Purchase
-    
+  - title: Purchase    
     output: web, pdf
 
     folderitems:
     - title: PO (Purchase Order)
       url: /books-nirvana-win/po(purchase-order).html
       output: web, pdf
-
+ 
     - title: LPO (Local Purchase Order)
       url: /books-nirvana-win/LPO (local-purchase-order).html
       output: web, pdf
-      
+       
     - title: JWO (Job Work Order)
       url: /books-nirvana-win/jwo-(job-work-order).html
       output: web, pdf
-      
+ 
+    - title: Material Rejection Note
+      url: /books-nirvana-win/material-rejection-note.html
+      output: web, pdf
+     
     - title: OD Note
       url: /books-nirvana-win/od-note.html
       output: web, pdf
@@ -194,10 +204,49 @@ entries:
       url: /books-nirvana-win/material-voucher-purchase.html
       output: web, pdf
  
-
     - title: Purchase Invoices
       url: /books-nirvana-win/purchase-invoices.html
       output: web, pdf
+      
+    - title: Credit Note FICO
+      url: /books-nirvana-win/credit-note-fico.html
+      output: web, pdf 
+
+    - title: Debit Note FICO
+      url: /books-nirvana-win/debit-note-fico.html
+      output: web, pdf 
+
+    - title: Quantity Credit Note Voucher
+      url: /books-nirvana-win/quantity-credit-note-voucher.html
+      output: web, pdf 
+
+    - title: Quantity Debit Note Company
+      url: /books-nirvana-win/quantity-debit-note-company.html
+      output: web, pdf 
+
+    - title: Invoice Rate Note(RC)
+      url: /books-nirvana-win/invoice-rate-note(rc).html
+      output: web, pdf 
+
+    - title: Invoice Rate Note (RD)
+      url: /books-nirvana-win/invoice-rate-note(rd).html
+      output: web, pdf 
+
+    - title: Invoice Rate Note(SB)
+      url: /books-nirvana-win/invoice-rate-note(sb).html
+      output: web, pdf 
+
+    - title: Recast Note Expense
+      url: /books-nirvana-win/recast-note-expense.html
+      output: web, pdf 
+
+    - title: Recast Note Income
+      url: /books-nirvana-win/recast-note-income.html
+      output: web, pdf 
+
+    - title: Invoice Of Third Party
+      url: /books-nirvana-win/invoice-of-third-party.html
+      output: web, pdf       
       
     - title: Purchase Against Payment
       url: /books-nirvana-win/purchase-against-payment.html
@@ -207,44 +256,57 @@ entries:
       url: /books-nirvana-win/payment-vendor.html
       output: web, pdf
       
-    - title: Material Rejection List
-      url: /books-nirvana-win/material-rejection-note.html
-      output: web, pdf
-      
-    
-      
-    
-  - title: Operations
-    
-    output: web, pdf
+    - title: Sales Tax Forms
+      url: /books-nirvana-win/sales-tax-forms.html
+      output: web, pdf 
 
-    folderitems:
+    - title: Purchase List Tax Area
+      url: /books-nirvana-win/purchase_list_tax_area.html
+      output: web, pdf 
     
-    - title: MO (Manufacturing Order)
-      url: /books-nirvana-win/mo-(manufacturing-order).html
-      output: web, pdf
-      
+  - title: Operations    
+    output: web, pdf
+    folderitems:    
+     
     - title: Material Voucher
       url: /books-nirvana-win/material-voucher-operations.html
-      output: web, pdf
-      
+      output: web, pdf      
         
   - title: Sale
     output: web, pdf
     folderitems:
     
+    - title: Sale Invoices
+      url: /books-nirvana-win/sale-invoices.html
+      output: web
+
+    - title: Quantity Credit Note Company
+      url: /books-nirvana-win/quantity-credit-note-company.html
+      output: web
+
+    - title: Quantity Debit Note Customer
+      url: /books-nirvana-win/sale-quantity-debit-note-customer.html
+      output: web
+
+    - title: Rate Credit Note
+      url: /books-nirvana-win/rate-credit-note.html
+      output: web
+      
+    - title: Rate Debit Note 
+      url: /books-nirvana-win/rate-debit-note.html
+      output: web      
+
+    - title: Reverse Invoice
+      url: /books-nirvana-win/reverse-invoice.html
+      output: web      
+    
     - title: OD Note
-      url: /books-nirvana-win/od-note.html
+      url: /books-nirvana-win/od-note-sale.html
       output: web
     
     - title: Material Voucher
       url: /books-nirvana-win/material-voucher-sale.html
-      output: web, pdf
-      
-        
-    - title: Sale Invoices
-      url: /books-nirvana-win/sale-invoices.html
-      output: web
+      output: web, pdf 
       
     - title: Sale Against Payment
       url: /books-nirvana-win/sale-against-payment.html
@@ -254,22 +316,41 @@ entries:
       url: /books-nirvana-win/payment-customer.html
       output: web
       
-  - title: Accounting
-    
-    output: web, pdf
+    - title: Sales Tax Forms
+      url: /books-nirvana-win/sale_sales_tax_forms.html
+      output: web
 
-    folderitems:
-  
+    - title: Order Position
+      url: /books-nirvana-win/order_position.html
+      output: web
+
+    - title: Order Book
+      url: /books-nirvana-win/order_book.html
+      output: web
+
+    - title: Invoice Waived
+      url: /books-nirvana-win/invoice_waived.html
+      output: web      
+      
+  - title: Accounting    
+    output: web, pdf
+    folderitems: 
       
     - title: Expense Management
-      url: /books-nirvana-win/expense-management.html
-      
-      output: web, pdf
-      
+      url: /books-nirvana-win/expense-management.html      
+      output: web, pdf      
       
     - title: Accounting Voucher
       url: /books-nirvana-win/accounting-voucher.html
       output: web, pdf
+      
+    - title: Costing Voucher
+      url: /books-nirvana-win/costing-voucher.html
+      output: web, pdf
+
+    - title: Payment Contra
+      url: /books-nirvana-win/payment-contra.html
+      output: web, pdf      
       
   - title: GST Menu
     url: /books-nirvana-win/gst-menu.html
@@ -294,8 +375,7 @@ entries:
 
     - title: Purchase
       url: /books-nirvana-win/purchase.html
-      output: web 
-      
+      output: web       
 
     - title: Sale
       url: /books-nirvana-win/sale.html
@@ -306,11 +386,7 @@ entries:
     url: /books-nirvana-win/accounts-menu.html
     output: web, pdf   
     folderitems :
-    
-    - title: Dashboard
-      url: /books-nirvana-win/dashboard.html
-      output: web
-
+ 
     - title: Trial Balance
       url: /books-nirvana-win/trial-balance.html
       output: web  
@@ -325,13 +401,11 @@ entries:
 
     - title: Campus Inventory
       url: /books-nirvana-win/campus-inventory.html
-      output: web 
-      
+      output: web       
 
     - title: Departmental Inventory
       url: /books-nirvana-win/departmental-inventory.html
-      output: web
-            
+      output: web            
 
     - title: Material
       url: /books-nirvana-win/material.html
@@ -344,6 +418,7 @@ entries:
   - title: Process Flows
     output: web, pdf   
     folderitems :
+    
     - title: Repair Billing Procedure
       url: /books-nirvana-win/repair-billing-procedure.html
       output: web
@@ -415,7 +490,11 @@ entries:
 
     - title: LD Invoice by Customer
       url: /books-nirvana-win/LD-Invoice-by-customer.html
-      output: web      
+      output: web  
+
+    - title: Disassemble Process 
+      url: /books-nirvana-win/disassemble-process.html
+      output: web       
 
   - title: Terminology 
     url: /books-nirvana-win/terminology.html   

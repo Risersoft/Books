@@ -12,7 +12,7 @@ comments: false
 
 For accounting, click on **Accounts** menu.
 
-![](/images/account-menu.jpg)
+![](/images/account-menu.png)
 
 For menu options, click on **Accounts-> Menu options---**
 

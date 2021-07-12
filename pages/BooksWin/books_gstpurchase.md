@@ -12,17 +12,17 @@ comments: false
 
 To view details about purchase, click on **Purchase->---**
 
-![](/images/purchase.jpg)
+![](/images/purchase.png)
 
 
 ## Counter Party invoice
 
 To view purchase counter party invoices, click on **Counter Party Invoices**.
 
-![](/images/purchase-counter-party-inv.jpg)
+![](/images/purchase-counter-party-inv.png)
 
 ## Purchase Invoice Matching
 
 To view purchase invoice matching with counter party invoice, click on **Purchase Invoices Matching**.
 
-![](/images/purchase-pur-inv-matching.jpg)
+![](/images/purchase-pur-inv-matching.png)

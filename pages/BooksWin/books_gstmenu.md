@@ -12,7 +12,7 @@ comments: false
 
 To view invoices according gst, click on **GST** menu.
 
-![](/images/gst-menu.jpg)
+![](/images/gst-menu.png)
 
 For menu options, click on **GST-> Menu** options---
 

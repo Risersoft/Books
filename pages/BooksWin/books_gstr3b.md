@@ -14,7 +14,7 @@ To view details about GSTR3B, click on **GSTR3B Menu -> ……**.
 
 ## Details of Outward Supplies and Inward Supplies Liable to Reverse Charge
 
-![](/images/gstr3b-detail-outward.jpg)
+![](/images/gstr3b-detail-outward.png)
 
 ## Details of Inter-State Supplies made to Unregistered/Composition/UIN Holders
 
@@ -23,7 +23,7 @@ To view details about GSTR3B, click on **GSTR3B Menu -> ……**.
 
 ## Eligible ITC
 
-![](/images/gstr3b-eligible-itc.jpg)
+![](/images/gstr3b-eligible-itc.png)
 
 ## Values of Exempt, Nil-rated and Non-gst Inward Supplies
 

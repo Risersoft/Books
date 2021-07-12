@@ -14,19 +14,19 @@ comments: false
 
 **Transfer (Meerut) –>**
 
-1.   Challan Type –> Inter Campus Input transfer.
+1. Challan Type –> Inter Campus Input transfer.
 
 ![](/images/pf-transfer-challantype.jpg)
 
 ![](/images/pf-transfer-challantype2.jpg)
 
-2.   Material Voucher (TP) against OD Note.
+2. Material Voucher (TP) against OD Note.
 
 ![](/images/pf-transfer-material-vouch.jpg)
 
 ![](/images/pf-transfer-material-vouch2.jpg)
 
-  3. Bill is Not Required.
+3. Bill is Not Required.
 
 **Received (Hapur) –>**
 
@@ -38,17 +38,17 @@ comments: false
 
 **Sale (Meerut) –>**
 
-1.   Challan Type –> Sale to Customer without Sales Order.
+1. Challan Type –> Sale to Customer without Sales Order.
 
 ![](/images/pf-transfer-sale-challantype.jpg)
 
-2.   But Pricing Procedure will be use. –> Transferred (Inter Unit) - GST Inter State
+2. But Pricing Procedure will be use. –> Transferred (Inter Unit) - GST Inter State
 
 ![](/images/pf-transfer-sale-billpricing.jpg)
 
-3.   Material Voucher (GI) Against OD Note
+3. Material Voucher (GI) Against OD Note
 
-4.   Invoice Sale MM against OD Note.
+4. Invoice Sale MM against OD Note.
 
 ![](/images/pf-transfer-sale-billpricing2.jpg)
 
@@ -56,10 +56,10 @@ comments: false
 
 **Purchase (Patna) –> if want to maintain ‘Patna Office’ Inventory –>**
 
-1.   Material Voucher (GR)
+1. Material Voucher (GR)
 
 ![](/images/pf-transfer-pur-mater-vouch.jpg)
 
-2.   Primary Invoice Purchase MM.
+2. Primary Invoice Purchase MM.
 
 ![](/images/pf-transfer-pur-primary.jpg)

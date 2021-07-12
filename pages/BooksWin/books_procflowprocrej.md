@@ -11,7 +11,6 @@ comments: false
 # Process of Rejection
 
 
-
 **Case 1-> Purchase Return to Vendor**
 
 –> Challan (Purchase Return) –> with mvt code 271 (GI)

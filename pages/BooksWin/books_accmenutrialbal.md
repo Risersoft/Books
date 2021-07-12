@@ -12,7 +12,7 @@ comments: false
 
 To view trial balance, click on **Accounts-> Trial Balance**
 
-![](/images/account-menu-trial-bal.jpg)
+![](/images/account-menu-trial-bal.png)
 
 ## Trial Balance GL
 
@@ -44,7 +44,7 @@ To view trail balance of employee, **Accounts -> Trial Balance -> Trail Balance 
 
 To view trail balance according to tax area, **Accounts -> Trial Balance -> Trail Balance Tax Area**
 
-![](/images/account-menu-trial-bal-tax-area.jpg)
+![](/images/account-menu-trial-bal-tax-area.png)
 
 
 

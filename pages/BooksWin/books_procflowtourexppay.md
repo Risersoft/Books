@@ -24,7 +24,7 @@ Step 4 –> Payment Travel (Against Expense Report) –> 5000 + 10,000 (Advance 
 
 **Note –** 1. Payment Date should be greater than Expense Report.
 
-2.  Advance date should be less then Payment date.
+           2.  Advance date should be less then Payment date.
 
 
 

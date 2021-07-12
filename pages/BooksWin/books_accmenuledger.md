@@ -12,7 +12,7 @@ comments: false
 
 To view ledger, click on **Accounts-> Ledger**
 
-![](/images/account-menu-ledger.jpg)
+![](/images/account-menu-ledger.png)
 
 ## Account Ledger
 
@@ -26,9 +26,9 @@ To view account ledger, click on **Ledger-> Account Ledger**. Select account win
 
 To view employee ledger, click on **Ledger-> ABC (any account name) below account ledger**. Select employee window will appear. Select the employee and click on **Done**.
 
-![](/images/account-menu-ledger-empl.jpg)
+![](/images/account-menu-ledger-empl.png)
 
-![](/images/account-menu-ledger-empl2.jpg)
+![](/images/account-menu-ledger-empl2.png)
 
 ![](/images/account-menu-ledger-empl3.jpg)
 
@@ -70,4 +70,19 @@ To view customer security ledger, click on **Ledger-> Customer Security**. Selec
 To view accounts payable ledger, click on **Ledger-> Accounts Payable**. Select vendor window will appear. Select the vendor and click on **Done**.
 
 ![](/images/account-menu-ledger-acc-payable.jpg)
+
+## Tax Area Ledger
+
+To view cgst account ledger, click on **Ledger-> Tax Area Ledger->Cgst Account**. Select tax area window will appear. Select the tax area and click on **Done**.
+
+![](/images/account-menu-ledger-tax-area-ledger.png)
+
+To view igst account ledger, click on **Ledger-> Tax Area Ledger->Igst Account**. Select tax area window will appear. Select the tax area and click on **Done**.
+
+![](/images/account-menu-ledger-tax-area-Igst.png)
+
+To view sgst account ledger, click on **Ledger-> Tax Area Ledger->Sgst Account**. Select tax area window will appear. Select the tax area and click on **Done**.
+
+![](/images/account-menu-ledger-tax-area-sgst.png)
+
 

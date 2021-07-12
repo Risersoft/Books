@@ -19,46 +19,73 @@ To view details about GSTR2, click on **GST->GSTR2 Menu -> ……**.
 
 To view B2B invoices and Credit/Debit notes, click on **GSTR2 -> B2B -> ………**.
 
-### Inward Supplies from Registered Taxable Persons
+### Inward Supplies Received from Registered Suppliers without Reverse Charge 
 
-![](/images/gstr2-b2b-inwrd.jpg)
+![](/images/gstr2-b2b-inwrd-withoutreverse.png)
 
-### Credit/Debit Notes Registered
+### Inward Supplies Received from Registered Suppliers with Reverse charge  
 
-![](/images/gstr2-b2b-notes.jpg)
+![](/images/gstr2-b2b-inwrd-withreverse.png)
+
+### Credit/Debit Notes Registered without Reverse Charge 
+
+![](/images/gstr2-b2b-notes-withoutreverse.png)
+
+### Credit/Debit Notes Registered with Reverse Charge 
+
+![](/images/gstr2-b2b-notes-withreverse.png)
 
 ## B2BUR
 
 To view B2BUR invoices, and Credit/Debit notes, click on **GSTR2 -> B2BUR -> ………**.
 
-### Inward Supplies from Unregistered Taxable Persons
+### Inward Supplies received from Unregistered Supplier With Out Reverse Charge 
 
-![](/images/gstr2-b2bur-inward.jpg)
+![](/images/gstr2-b2bur-inward-withoutreverse.png)
 
-### Credit/Debit Notes Unregistered
+### Inward Supplies received from Unregistered Supplier With Reverse Charge 
 
-![](/images/gstr2-b2bur-notes.jpg)
+![](/images/gstr2-b2bur-inward-withreverse.png)
+
+### Credit/Debit Notes Unregistered without Reverse charge 
+
+![](/images/gstr2-b2bur-notes-withoutreverse.png)
+
+### Credit/Debit Notes Unregistered with Reverse charge 
+
+![](/images/gstr2-b2bur-notes-withreverse.png)
 
 ## IMPS
 
 To view IMPS invoices, and Credit/Debit notes, click on **GSTR2 -> IMPS -> ………**.
 
-### Import of Service
+### Import of Service without Reverse Charge 
 
+![](/images/gstr2-imps-withoutreverse.png)
 
-![](/images/gstr2-imps-importof-service.jpg)
+### Import of Service with Reverse Charge 
 
-### Credit/Debit Notes Unregistered
+![](/images/gstr2-imps-withreverse.png)
 
-![](/images/gstr2-imps-notes.jpg)
+### Credit/Debit Notes Unregistered without Reverse Charge 
+
+![](/images/gstr2-imps-notes-withoutreverse.png)
+
+### Credit/Debit Notes Unregistered with Reverse Charge 
+
+![](/images/gstr2-imps-notes-withreverse.png)
 
 ## IMPG
 
 To view IMPG invoices, and Credit/Debit notes, click on **GSTR2 -> IMPG-> ………**.
 
-### Import of Goods
+### Import of Goods without Reverse Charge 
 
-![](/images/gstr2-impg-importof-goods.jpg)
+![](/images/gstr2-impg-withoutreverse.png)
+
+### Import of Goods with Reverse Charge 
+
+![](/images/gstr2-impg-withreverse.png)
 
 ## Nil Rated
 
@@ -66,7 +93,7 @@ To view nil rated invoices, click on **GSTR2 -> Nil Rated -> ………**.
 
 ### Composition, Nil Rated, Exempted and Non-gst Inward Supplies
 
-![](/images/gstr2-nilrated-comp.jpg)
+![](/images/gstr2-nilrated-comp.png)
 
 ## Advance Tax
 
@@ -93,7 +120,7 @@ To view summary, click on **GSTR2 -> Summary-> ………**.
 
 ### Return Summary
 
-![](/images/gstr2-summ-return.jpg)
+![](/images/gstr2-summ-return.png)
 
 ### Advance Tax Paid Summary
 

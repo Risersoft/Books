@@ -13,7 +13,7 @@ comments: false
 To view details about GSTR1, click on **GST->GSTR1 -> ……**.
 
 
-![](/images/gstr1.jpg)
+![](/images/gstr1.png)
 
 
 ## B2B

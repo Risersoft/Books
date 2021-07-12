@@ -14,10 +14,14 @@ To view details about GSTN, click on **GSTN Menu -> ……**.
 
 ## Return Status
 
-![](/images/gstn-return-status.jpg)
+![](/images/gstn-return-status.png)
 
 
 ## Transaction History
 
-![](/images/gstn-trans-history.jpg)
+![](/images/gstn-trans-history.png)
+
+## GSTN Tokens
+
+![](/images/gstn-tokens.png)
 

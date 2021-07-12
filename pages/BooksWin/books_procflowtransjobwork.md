@@ -12,23 +12,23 @@ comments: false
 
 **Transfer from Meerut –>**
 
-1.   Challan Type –> Sub Vendor Job Work. with MvtCode – 421
+1. Challan Type –> Sub Vendor Job Work. with MvtCode – 421
 
 ![](/images/pf-transfer-interunit.jpg)
 
 ![](/images/pf-transfer-interunit-odnote.jpg)
 
-2.   Material Voucher (TP) against OD Note.
+2. Material Voucher (TP) against OD Note.
 
 **Received in Hapur –>**
 
-1.   Material Voucher (GR) with MvtCode – 161 (in Consignment Stock).
+1. Material Voucher (GR) with MvtCode – 161 (in Consignment Stock).
 
 ![](/images/pf-transfer-recd-material-vouch.jpg)
 
 **After Job Work –> Transfer from Hapur**
 
-1.   Challan Type –> Return Customer Consignment. with MvtCode – 273
+1. Challan Type –> Return Customer Consignment. with MvtCode – 273
 
 ![](/images/pf-transfer-afterjobwork.jpg)
 
