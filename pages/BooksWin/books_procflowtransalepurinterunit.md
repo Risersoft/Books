@@ -2,7 +2,7 @@
 title: Transferred/Sale/Purchase (Inter Unit)
 keywords: Transferred/Sale/Purchase (Inter Unit)
 sidebar: bookswin_sidebar
-permalink: books-nirvana-win/transferred/Sale/Purchase-(inter-unit).html
+permalink: books-nirvana-win/transferred-Sale-Purchase-(inter-unit).html
 folder: BooksWin
 hide_sidebar: false
 comments: false

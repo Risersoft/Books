@@ -262,15 +262,8 @@ entries:
 
     - title: Purchase List Tax Area
       url: /books-nirvana-win/purchase_list_tax_area.html
-      output: web, pdf 
-    
-  - title: Operations    
-    output: web, pdf
-    folderitems:    
-     
-    - title: Material Voucher
-      url: /books-nirvana-win/material-voucher-operations.html
-      output: web, pdf      
+      output: web, pdf     
+
         
   - title: Sale
     output: web, pdf
@@ -330,12 +323,16 @@ entries:
 
     - title: Invoice Waived
       url: /books-nirvana-win/invoice_waived.html
-      output: web      
-      
-  - title: Accounting    
+      output: web
+
+  - title: Transactions    
     output: web, pdf
-    folderitems: 
-      
+    folderitems:    
+     
+    - title: Material Voucher
+      url: /books-nirvana-win/material-voucher-operations.html
+      output: web, pdf 
+
     - title: Expense Management
       url: /books-nirvana-win/expense-management.html      
       output: web, pdf      
@@ -350,8 +347,8 @@ entries:
 
     - title: Payment Contra
       url: /books-nirvana-win/payment-contra.html
-      output: web, pdf      
-      
+      output: web, pdf                  
+
   - title: GST Menu
     url: /books-nirvana-win/gst-menu.html
     output: web, pdf
@@ -423,11 +420,11 @@ entries:
       url: /books-nirvana-win/repair-billing-procedure.html
       output: web
 
-    - title: Payment HR (Tour Expense Issue)
+    - title: Payment HR (Expense Voucher Issue)
       url: /books-nirvana-win/payment-hr-(tour-expense-issue).html
       output: web    
 
-    - title: Transfer to Subcontracting Vendor (421) and Receive against Transfer (425)
+    - title: Transfer to Subcontracting Vendor and Receive Back
       url: /books-nirvana-win/transfer-to-subcontracting-vendor(421)-and-receive-against-transfer(425).html
       output: web     
              
@@ -440,11 +437,11 @@ entries:
       url: /books-nirvana-win/purchase-expense-reporting.html
       output: web  
 
-    - title: Tour Expense Reporting
+    - title: Expense Voucher Reporting
       url: /books-nirvana-win/tour-expense-reporting.html
       output: web  
 
-    - title: Tour Expense Payment
+    - title: Expense Voucher Payment
       url: /books-nirvana-win/tour-expense-payment.html
       output: web 
 
@@ -469,11 +466,11 @@ entries:
       output: web  
 
     - title: Transferred/Sale/Purchase (Inter Unit)
-      url: /books-nirvana-win/transferred/Sale/Purchase-(inter-unit).html
+      url: /books-nirvana-win/transferred-Sale-Purchase-(inter-unit).html
       output: web  
 
-    - title: Transfer Inter Unit for Job Work (Meerut to Hapur)
-      url: /books-nirvana-win/transfer-inter-unit-for-job-work-(meerut-to-hapur).html
+    - title: Transfer Inter Unit for Job Work
+      url: /books-nirvana-win/transfer-inter-unit-for-job-work.html
       output: web  
       
     - title: Bank Charges Deduction Process

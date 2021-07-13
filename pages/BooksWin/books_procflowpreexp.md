@@ -16,11 +16,7 @@ comments: false
 
 Then the invoice shall be passed as usual and accounting entries made as follows:
 
-
-
 Prepaid expenses are an asset account.
-
-
 
 Accounting vouchers required in addition to invoice entry:
 

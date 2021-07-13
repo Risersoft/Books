@@ -10,8 +10,6 @@ comments: false
 
 # Outstanding Expenses
 
-
-
 **Example:** It is known in March End that a bill of 100000 will be payable for audit fee but the actual bill will come later around September.
 
 Outstanding expenses is a liability account.
@@ -31,8 +29,6 @@ Both Accounting entries to be made manually
 Payment purchase voucher to have facility for marking as prepaid expense.
 
 If so, outstanding expenses shall be credited instead of cash/bank.
-
-
 
 During invoice creation, max to allow linking with any prepaid expense voucher.
 

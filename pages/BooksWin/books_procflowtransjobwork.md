@@ -1,14 +1,14 @@
 ---
-title: Transfer Inter Unit for Job Work (Meerut to Hapur)
-keywords: Transfer Inter Unit for Job Work (Meerut to Hapur)
+title: Transfer Inter Unit for Job Work
+keywords: Transfer Inter Unit for Job Work
 sidebar: bookswin_sidebar
-permalink: books-nirvana-win/transfer-inter-unit-for-job-work-(meerut-to-hapur).html
+permalink: books-nirvana-win/transfer-inter-unit-for-job-work.html
 folder: BooksWin
 hide_sidebar: false
 comments: false
 ---
 
-# Transfer Inter Unit for Job Work (Meerut to Hapur)
+# Transfer Inter Unit for Job Work
 
 **Transfer from Meerut –>**
 

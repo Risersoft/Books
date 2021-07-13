@@ -39,7 +39,4 @@ Note – In this case AEB will be treated like as Vendor.
 Note – In this case AEB will be treated like as Bank.
 
 
-
-
-
 **Note –>** For Payment to AEB (Bank), we will use Payment Contra.
